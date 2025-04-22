@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 * {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Roboto', sans-serif;
   /* Other nice font: Verdana*/
   background-color: #000000;
 }
@@ -9,8 +9,8 @@
 h1 {
   margin: 50px;
   color: rgb(0, 0, 0);
-  -webkit-text-fill-color: rgb(255, 255, 255); 
-  -webkit-text-stroke-color: rgb(0, 0, 0);
+  -webkit-text-fill-color: rgb(0, 0, 0); 
+  -webkit-text-stroke-color: rgb(255, 255, 255);
   font-size: 50px;
   
 }
