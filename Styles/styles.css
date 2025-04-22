@@ -2,14 +2,14 @@
 
 * {
   font-family: 'Verdana', sans-serif;
-  background-color: #000;
+  background-color: #ffffff;
 }
 
 h1 {
   margin: 50px;
   color: black;
-  -webkit-text-fill-color: white; 
-  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: rgb(0, 0, 0); 
+  -webkit-text-stroke-color: rgb(255, 255, 255);
   font-size: 50px;
   
 }
@@ -19,7 +19,7 @@ h1 {
   position: relative;
   height:  1em;
   line-height: 1em;
-  width: 242px;
+  width: 245px;
   overflow: hidden;
   vertical-align: middle;
 }
@@ -29,7 +29,7 @@ h1 {
   position: relative;
   height:  1em;
   line-height: 1em;
-  width: 260px;
+  width: 600px;
   overflow: hidden;
   vertical-align: middle;
 }
@@ -44,7 +44,7 @@ h1 {
 
 .carousel2-wrapper {
   display: inline-flex;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
   flex-direction: column;
   position: absolute;
   top: -4px;
@@ -55,8 +55,8 @@ h1 {
       0% {top: calc(-0em + -4px);} /* H1 N1 */
       10% {top: calc(-0em + -4px);} /* H1 N1 */
       20% {top: calc(-0em + -4px);} /* H1 N1 */
-      30% {top: calc(-1em + -22px);} /* H1 N2 */
-      60% {top: calc(-1em + -22px);} /* H1 N2 */
+      30% {top: calc(-1em + -19px);} /* H1 N2 */
+      60% {top: calc(-1em + -19px);} /* H1 N2 */
       70% {top: calc(-2em + -42px);} /* H1 N3 */
       90% {top: calc(-2em + -42px);} /* H1 N3 */
       100% {top: calc(-0em + -4px);} /* H1 N1 */
@@ -90,13 +90,13 @@ h1 {
   margin-bottom: 20px;
 }
 
-.carousel-item:nth-child(1) {  -webkit-text-fill-color: #DD4B25}
-.carousel-item:nth-child(2) {  -webkit-text-fill-color: #256EAF}
+.carousel-item:nth-child(1) {  -webkit-text-fill-color: #256EAF}
+.carousel-item:nth-child(2) {  -webkit-text-fill-color: #DD4B25}
 .carousel-item:nth-child(3) {  -webkit-text-fill-color: #E8D44D}
 
-.carousel2-item:nth-child(1) {  -webkit-text-fill-color: #DD4B25}
-.carousel2-item:nth-child(2) {  -webkit-text-fill-color: #DD4B25}
-.carousel2-item:nth-child(3) {  -webkit-text-fill-color: #256EAF}
-.carousel2-item:nth-child(4) {  -webkit-text-fill-color: #256EAF}
+.carousel2-item:nth-child(1) {  -webkit-text-fill-color: #256EAF}
+.carousel2-item:nth-child(2) {  -webkit-text-fill-color: #256EAF}
+.carousel2-item:nth-child(3) {  -webkit-text-fill-color: #DD4B25}
+.carousel2-item:nth-child(4) {  -webkit-text-fill-color: #DD4B25}
 .carousel2-item:nth-child(5) {  -webkit-text-fill-color: #E8D44D}
 .carousel2-item:nth-child(6) {  -webkit-text-fill-color: #E8D44D}
