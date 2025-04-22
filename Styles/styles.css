@@ -2,14 +2,14 @@
 
 * {
   font-family: 'Verdana', sans-serif;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 h1 {
   margin: 50px;
-  color: black;
-  -webkit-text-fill-color: rgb(0, 0, 0); 
-  -webkit-text-stroke-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: rgb(255, 255, 255); 
+  -webkit-text-stroke-color: rgb(0, 0, 0);
   font-size: 50px;
   
 }
