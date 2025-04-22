@@ -2,6 +2,7 @@
 
 * {
   font-family: 'Verdana', sans-serif;
+  /* Other nice font: Verdana*/
   background-color: #000000;
 }
 
@@ -30,7 +31,7 @@ h1 {
   height:  1em;
   line-height: 1em;
   width: 1200px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   vertical-align: middle;
 }
 
