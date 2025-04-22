@@ -9,8 +9,8 @@
 h1 {
   margin: 50px;
   color: rgb(0, 0, 0);
-  -webkit-text-fill-color: rgb(0, 0, 0); 
-  -webkit-text-stroke-color: rgb(255, 255, 255);
+  -webkit-text-fill-color: rgb(255, 255, 255); 
+  -webkit-text-stroke-color: rgb(0, 0, 0);
   font-size: 50px;
   
 }
@@ -20,7 +20,7 @@ h1 {
   position: relative;
   height:  1em;
   line-height: 1em;
-  width: 245px;
+  width: 260px;
   overflow: hidden;
   vertical-align: middle;
 }
@@ -30,7 +30,7 @@ h1 {
   position: relative;
   height:  1em;
   line-height: 1em;
-  width: 850px;
+  width: 1000px;
   overflow: hidden;
   vertical-align: middle;
 }
@@ -56,12 +56,13 @@ h1 {
       0% {top: calc(-0em + -4px);} /* H1 N1 */
       10% {top: calc(-0em + -4px);} /* H1 N1 */
       20% {top: calc(-0em + -4px);} /* H1 N1 */
-      30% {top: calc(-1em + -19px);} /* H1 N2 */
-      60% {top: calc(-1em + -19px);} /* H1 N2 */
+      30% {top: calc(-1em + -22px);} /* H1 N2 */
+      60% {top: calc(-1em + -22px);} /* H1 N2 */
       70% {top: calc(-2em + -42px);} /* H1 N3 */
       90% {top: calc(-2em + -42px);} /* H1 N3 */
+      /*100% {top: calc(-3em + -62px);} /* H1 N1 V2 */
       100% {top: calc(-0em + -4px);} /* H1 N1 */
-    }
+   }
 
 @keyframes carousel2 {
       0% {top: calc(-0em + -4px);} /* H1 N1.1 */
@@ -76,6 +77,7 @@ h1 {
       75% {top: calc(-4em + -82px);} /* H1 N3.1 */
       85% {top: calc(-5em + -102px);} /* H1 N3.2 */
       90% {top: calc(-5em + -102px);} /* H1 N3.2 */
+      /*100% {top: calc(-6em + -122px);} /* H1 N1.1 V2 */
       100% {top: calc(-0em + -4px);} /* H1 N1.1 */
     }
 
@@ -94,6 +96,8 @@ h1 {
 .carousel-item:nth-child(1) {  -webkit-text-fill-color: #256EAF}
 .carousel-item:nth-child(2) {  -webkit-text-fill-color: #DD4B25}
 .carousel-item:nth-child(3) {  -webkit-text-fill-color: #E8D44D}
+.carousel-item:nth-child(4) {  -webkit-text-fill-color: #256EAF}
+
 
 .carousel2-item:nth-child(1) {  -webkit-text-fill-color: #256EAF}
 .carousel2-item:nth-child(2) {  -webkit-text-fill-color: #256EAF}
@@ -101,3 +105,4 @@ h1 {
 .carousel2-item:nth-child(4) {  -webkit-text-fill-color: #DD4B25}
 .carousel2-item:nth-child(5) {  -webkit-text-fill-color: #E8D44D}
 .carousel2-item:nth-child(6) {  -webkit-text-fill-color: #E8D44D}
+.carousel2-item:nth-child(7) {  -webkit-text-fill-color: #256EAF}
