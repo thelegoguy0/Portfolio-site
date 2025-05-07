@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  /* Other nice font: Verdana*/
+  background-color: #000000;
+}
+
+p{
+  margin: 30px;
+  color:#000000;
+  -webkit-text-fill-color: rgb(255, 255, 255); 
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  font-size: 1.5em;
+}
+
+.flatbgdiv {
+  margin: 80px 0px 0px 0px;
+  
+  background-color: #282828;
+}
+
+.flatbgimg1 {
+  margin: 0px 0px 0px 30px;
+  padding: 0px 0px 40px 80px;
+  background-color: #282828;
+}
+.flatbgimg2 {
+  margin: 0px 0px 0px 50px;
+  padding: 50px 0px 40px 80px;
+  background-color: #282828;
+}
+.flatbgimg3 {
+  margin: 0px 0px 180px 0px;
+  padding: 0px 0px 40px 80px;
+  background-color: #282828;
+}
+
+.flatbgh {
+  text-align: center;
+  margin: 80px 0px 0px 0px;
+  padding: 40px 0px 0px 0px;
+  background-color: #282828;
+}
+
+.flatbgp {
+  padding: 0px 0px 20px 880px;
+  background-color: #282828;
+}
