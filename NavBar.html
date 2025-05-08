@@ -2,9 +2,10 @@
 <html>
 <head>
     <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/styles_paragraphs.css">
 
 <style>
-    
+
 ul {
   list-style-type: none;
   margin: 20px 0px 0px 0px;
@@ -39,6 +40,10 @@ li.dropdown {
   display: inline-block;
 }
 
+.spacer{
+    margin:0px 40% 0px 0px;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -62,21 +67,61 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: rgb(0, 0, 0);
+ border: 1px solid rgb(0, 0, 0);
+}
+.scroll-left p {
+ background-color: yellow;
+ color: black;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(100px);
+ /* Apply animation to this element */
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+ 0%   {
+ transform: translateX(100%); 		
+ }
+ 100% {
+ transform: translateX(-100%); 
+ }
+}
+
 </style>
 </head>
 <body>
-
-<ul>
-  <li><a href="about.html">About me</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Development</a>
-    <div class="dropdown-content">
-      <a href="development.html">My Professional Identity</a>
-      <a href="#">My Design Vision</a>
-      <a href="#">My Professional Developent Plan</a>
-    </div>
-  </li>
-  <li><a href="works.html">Works</a></li>
-</ul>
+<div>
+    <ul>
+    <li>    
+        <a href="about.html">About me</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Development</a>
+        <div class="dropdown-content">
+        <a href="development.html">My Professional Identity</a>
+        <a href="#">My Design Vision</a>
+        <a href="#">My Professional Developent Plan</a>
+        </div>
+    </li>
+    <li><a href="works.html">Works</a></li>
+    <li class="spacer"><a href="index.html">Home</a></li>
+    </ul>
+</div>
+<div class="scroll-left">
+    <p class="sliderp" color="black">Site under construction... </p>
+</div>
 </body>
 </html>

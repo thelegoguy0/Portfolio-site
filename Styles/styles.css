@@ -6,6 +6,14 @@
   background-color: #000000;
 }
 
+p{
+  margin: 30px;
+  color:#000000;
+  -webkit-text-fill-color: rgb(255, 255, 255); 
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  font-size: 1.5em;
+}
+
 h1 {
   margin: 50px;
   color: rgb(0, 0, 0);
@@ -15,7 +23,21 @@ h1 {
   
 }
 
+h2 {
+  margin: 35px;
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: rgb(255, 255, 255); 
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  font-size: 35px;
+  
+}
 
+.sticky {
+  position: sticky;
+  top:0;
+  overflow: hidden;
+  
+}
 
 .carousel {
   display: inline-block;
