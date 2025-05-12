@@ -3,7 +3,7 @@
 * {
   font-family: 'Roboto', sans-serif;
   /* Other nice font: Verdana*/
-  background-color: #000000;
+  background-color: #1c1c1c;
 }
 
 p{
@@ -33,6 +33,11 @@ h2 {
 }
 
 .h1index {
+  /*width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 50px -50vw 0px;*/
   margin: 50px auto 0px;
   padding: 50px 50px 0;
   /*border:3px dashed blue;*/

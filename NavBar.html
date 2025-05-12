@@ -9,10 +9,12 @@
 ul {
   list-style-type: none;
   margin: 20px 0px 0px 0px;
-  padding-right: 260px;
+  padding-right: 200px;
+  /*padding-left: 260px;*/
   overflow: hidden;
   background-color: #282828;
   width: auto;
+  font-size: calc(0.3em + 1vmax);
 }
 
 li {
@@ -23,7 +25,7 @@ li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 16px 36px;
+  padding: calc(16px + 0.2vmax) calc(36px + 0.4vmax);
   color: #f9f9f9; 
   margin-left: 3px;
   text-decoration: none;
@@ -42,7 +44,8 @@ li.dropdown {
 }
 
 .spacer{
-    margin:0px 40% 0px 0px;
+    margin:0px calc(100% - 260px - 260px - 17vw) 0px 0px;
+    /*margin-right: calc(260px);*/
 }
 
 .dropdown-content {
@@ -107,17 +110,17 @@ li.dropdown {
 <div>
     <ul>
     <li>    
-        <a href="about.html">About me</a></li>
+        <a href="/about.html">About me</a></li>
     <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Development</a>
         <div class="dropdown-content">
-        <a href="development.html">My Professional Identity</a>
+        <a href="/development.html">My Professional Identity</a>
         <a href="#">My Design Vision</a>
         <a href="#">My Professional Developent Plan</a>
         </div>
     </li>
-    <li><a href="works.html">Works</a></li>
-    <li class="spacer"><a href="index.html">Home</a></li>
+    <li><a href="/works.html">Works</a></li>
+    <li class="spacer"><a href="/index.html">Home</a></li>
     </ul>
 </div>
 <div class="scroll-left">
