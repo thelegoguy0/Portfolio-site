@@ -38,8 +38,9 @@ h2 {
   left: 50%;
   right: 50%;
   margin: 50px -50vw 0px;*/
-  margin: 50px auto 0px;
+  margin: 50px 0px 0px;
   padding: 50px 50px 0;
+  font-size: calc(20px + 3vw);
   /*border:3px dashed blue;*/
 }
 
@@ -58,9 +59,9 @@ h2 {
 .carousel {
   display: inline-block;
   position: relative;
-  height:  1em;
+  height:  1.1em;
   line-height: 1em;
-  width: 260px;
+  width: 5.2em;
   overflow: hidden;
   vertical-align: middle;
 }
@@ -68,9 +69,9 @@ h2 {
 .carousel2 {
   display: inline-block;
   position: relative;
-  height:  1em;
+  height:  1.1em;
   line-height: 1em;
-  width: 1000px;
+  width: 100%;
   overflow: hidden;
   vertical-align: middle;
 }
