@@ -3,6 +3,7 @@
   margin: 5vw auto 0px;
   padding: 0px 0px 75px 0px;
   background-color: #282828;
+  min-height: 800px;
   /*background-size: 90% auto;*/
 }
 
@@ -44,6 +45,7 @@
   margin: 5vw 0px 0px 0px;
   padding: 40px 0px 0px 0px;
   background-color: #282828;
+  font-weight: bold;
 }
 
 .flatbgsubh {
@@ -61,8 +63,9 @@
 }
 
 .flatbgbuttonp {
-  margin: -100px 0px 0px 0px;
+  margin: -120px 0px 0px 0px;
   padding: 0px 0px 20px 38%;
   background-color: #282828;
+  font-weight: 700;
 }
 
