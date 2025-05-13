@@ -1,7 +1,7 @@
 .flatbgdiv {
-  margin: 80px auto 0px auto;
+  max-width: 1243px;
+  margin: 5vw auto 0px;
   padding: 0px 0px 75px 0px;
-  width: 1243px;
   background-color: #282828;
   /*background-size: 90% auto;*/
 }
@@ -41,8 +41,16 @@
 
 .flatbgh {
   text-align: center;
-  margin: 80px 0px 0px 0px;
+  margin: 5vw 0px 0px 0px;
   padding: 40px 0px 0px 0px;
+  background-color: #282828;
+}
+
+.flatbgsubh {
+  -webkit-text-fill-color:#929292;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   background-color: #282828;
 }
 
