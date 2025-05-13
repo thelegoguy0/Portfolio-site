@@ -136,7 +136,7 @@ h2 {
 
 .carousel-item:nth-child(1) {  -webkit-text-fill-color: #256EAF}
 .carousel-item:nth-child(2) {  -webkit-text-fill-color: #DD4B25}
-.carousel-item:nth-child(3) {  -webkit-text-fill-color: #E8D44D}
+.carousel-item:nth-child(3) {  -webkit-text-fill-color: #31dd25} /* prev. #E8D44D */
 .carousel-item:nth-child(4) {  -webkit-text-fill-color: #256EAF}
 
 
@@ -145,5 +145,6 @@ h2 {
 .carousel2-item:nth-child(3) {  -webkit-text-fill-color: #DD4B25}
 .carousel2-item:nth-child(4) {  -webkit-text-fill-color: #DD4B25}
 .carousel2-item:nth-child(5) {  -webkit-text-fill-color: #E8D44D}
-.carousel2-item:nth-child(6) {  -webkit-text-fill-color: #E8D44D}
+.carousel2-item:nth-child(5) {  -webkit-text-fill-color: #31dd25}
+.carousel2-item:nth-child(6) {  -webkit-text-fill-color: #31dd25} /*86C429*/
 .carousel2-item:nth-child(7) {  -webkit-text-fill-color: #256EAF}
