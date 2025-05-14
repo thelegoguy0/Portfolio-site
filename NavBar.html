@@ -1,109 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="Styles/styles.css">
-    <link rel="stylesheet" href="Styles/styles_paragraphs.css">
-
+  <link rel="stylesheet" href="Styles/Style_base.css">
+  <link rel="stylesheet" href="Styles/Style_NavBar.css">
+  <script type="text/javascript" src="lightmode.js" defer></script>
+  
 <style>
 
-ul {
-  list-style-type: none;
-  margin: 1vw 0px 0px 0px;
-  padding-right: 13vw;
-  /*padding-left: 260px;*/
-  overflow: hidden;
-  background-color: #282828;
-  max-width: 100%;
-  font-size: calc(0.3em + 1vmax);
-}
-
-li {
-  float: right;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: calc(1.2vw) calc(2.8vw);
-  color: #f9f9f9; 
-  margin-left: 3px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  
-  background-color: #256EAF;
-  /*
-  background-color: red;
-  */
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.spacer{
-    margin:0px calc(100% - 50vw) 0px 0px;
-    /*margin-right: calc(260px);*/
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #256EAF;
-  /*padding: 12px;*/ 
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(126, 124, 124, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: #9e9d9d;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #256EAF;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-.scroll-left {
- height: 3.5vw;	
- overflow: hidden;
- position: relative;
- background: yellow;
- /*border: 1px solid rgb(255, 153, 0);*/
-}
-.scroll-left p {
- background-color: yellow;
- -webkit-text-fill-color: rgb(0, 0, 0) !important; 
- position: absolute;
- font-size: calc(0.3em + 1vmax) !important;
- max-width: 100%;
- height: 100%;
- margin: 0;
- line-height: 3.5vw;
- text-align: center;
- /* Starting position */
- transform:translateX(100vw);
- /* Apply animation to this element */
- animation: scroll-left 15s linear infinite;
-}
-/* Move it (define the animation) */
-@keyframes scroll-left {
- 0%   {
- transform: translateX(100vw); 		
- }
- 100% {
- transform: translateX(-15em); 
- }
-}
 
 </style>
 </head>
@@ -121,11 +24,26 @@ li.dropdown {
         </div>
     </li>
     <li><a href="/works.html">Works</a></li>
-    <li class="spacer"><a href="/index.html">Home</a></li>
+    
+    <li class="spacer">
+      <a href="/index.html">Home</a></li>
+      <button id="themeswitch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+      </button>
     </ul>
 </div>
 <div class="scroll-left">
     <p>Site under construction... </p>
 </div>
+
+
+  <script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("lightmode");
+  }
+</script>
+
 </body>
 </html>

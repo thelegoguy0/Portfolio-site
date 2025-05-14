@@ -1,0 +1,124 @@
+
+
+#themeswitch{
+    height: 3vw;
+    width: 3vw;
+    padding: 0;
+    margin: 0.3vw;
+    border-radius: 25%;
+    background-color: var(--base-divbg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#themeswitch svg{
+    fill: var(--base-bgfill)
+}
+#themeswitch svg:last-child{
+    display: none;
+}
+.lightmode #themeswitch svg:first-child{
+    display: none;
+}
+.lightmode #themeswitch svg:last-child{
+    display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 1vw 0px 0px 0px;
+  padding-right: 13vw;
+  /*padding-left: 260px;*/
+  overflow: hidden;
+  background-color: var(--base-divbg);
+  max-width: 100%;
+  font-size: calc(0.3em + 1vmax);
+}
+
+li {
+  float: right;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: calc(1.2vw) calc(2.8vw);
+  color: #f9f9f9; 
+  margin-left: 3px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  
+  background-color: #256EAF;
+  /*
+  background-color: red;
+  */
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.spacer{
+    margin:0px calc(100% - 50vw) 0px 0px;
+    /*margin-right: calc(260px);*/
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #256EAF;
+  /*padding: 12px;*/ 
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(126, 124, 124, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #9e9d9d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #23394d;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.scroll-left {
+ height: 3.5vw;	
+ overflow: hidden;
+ position: relative;
+ background: yellow !important;
+ /*border: 1px solid rgb(255, 153, 0);*/
+}
+.scroll-left p {
+ background-color: yellow !important;
+ -webkit-text-fill-color: rgb(0, 0, 0) !important; 
+ position: absolute;
+ font-size: calc(0.3em + 1vmax) !important;
+ max-width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 3.5vw;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(100vw);
+ /* Apply animation to this element */
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+ 0%   {
+ transform: translateX(100vw); 		
+ }
+ 100% {
+ transform: translateX(-15em); 
+ }
+}

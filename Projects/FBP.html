@@ -3,8 +3,10 @@
 <html>
 <head>
   <title>Luke Smit - Portfolio FBP</title>
-  <link rel="stylesheet" href="/Styles/styles.css">
-  <link rel="stylesheet" href="/Styles/styles_paragraphs.css">
+  <link rel="stylesheet" href="Styles/Style_base.css">
+  <link rel="stylesheet" href="Styles/Style_NavBar.css">
+  <script type="text/javascript" src="lightmode.js" defer></script>
+
 <style> 
 
 </style>
@@ -44,9 +46,13 @@
 
   <div w3-include-html="/NavBar.html"></div> 
 
-  <script>
+    <script>
   includeHTML();
-  </script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+  }
+</script>
   
 
 <h1>Hi, This is where my FBP info will go!</h1>

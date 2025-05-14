@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+  --base-textfill: rgb(255, 255, 255); 
+  --base-textstroke: rgb(0, 0, 0);
+  --base-bgfill: #1c1c1c;
+  --base-divbg: #282828;
+  --base-col: ;
+}
+
+.lightmode{
+  --base-textfill: rgb(0, 0, 0); 
+  --base-textstroke: rgb(255, 255, 255); 
+  --base-bgfill: #c9c9c9;
+  --base-divbg: #8f8f8f;
+  --base-col: ;
+}
+
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+  /* Other nice font: Verdana*/
+  
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--base-bgfill)
+}
+
+p{
+  margin: 30px;
+  color:#000000;
+  -webkit-text-fill-color: var(--base-textfill);
+  -webkit-text-stroke-color: var(--base-textstroke);
+  font-size: 1.5em;
+}
+
+h1 {
+  margin: 50px;
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: var(--base-textfill);
+  -webkit-text-stroke-color: var(--base-textstroke);
+  font-size: 50px;
+  
+}
+
+h2 {
+  margin: 35px;
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: var(--base-textfill);
+  -webkit-text-stroke-color: var(--base-textstroke);
+  font-size: 35px;
+  
+}
+

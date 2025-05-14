@@ -1,8 +1,23 @@
+
+
+.h1index {
+  /*width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 50px -50vw 0px;*/
+  margin: 3vw 0px 0px;
+  padding: 3vw 2vw 0;
+  font-size: calc(20px + 3vw);
+  font-weight: 900;
+  /*border:3px dashed blue;*/
+}
+
 .flatbgdiv {
   max-width: 1243px;
   margin: 5vw auto 0px;
   padding: 0px 0px 75px 0px;
-  background-color: #282828;
+  background-color: var(--base-divbg);
   min-height: 800px;
   /*background-size: 90% auto;*/
 }
@@ -15,7 +30,7 @@
   left:5%;
   margin: 0px 0px 0px 30px;
   padding: 0px 0px 40px 0px;
-  background-color: #282828;
+  background-color: var(--base-divbg);
 }
 .flatbgimg2 {
   position: relative;
@@ -26,7 +41,7 @@
 
   margin: 0px 0px 0px 50px;
   padding: 50px 0px 40px 40px;
-  background-color: #282828;
+  background-color: var(--base-divbg);
 }
 .flatbgimg3 {
   position: relative;
@@ -37,14 +52,14 @@
 
   margin: 0px 40px 180px 0px;
   padding: 0px 0px 40px 80px;
-  background-color: #282828;
+  background-color: var(--base-divbg);
 }
 
 .flatbgh {
   text-align: center;
   margin: 5vw 0px 0px 0px;
   padding: 40px 0px 0px 0px;
-  background-color: #282828;
+  background-color: var(--base-divbg);
   font-weight: bold;
 }
 
@@ -53,19 +68,19 @@
   text-align: center;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  background-color: #282828;
+  background-color: var(--base-divbg);
 }
 
 .flatbgp {
   margin: 100px 0px 0px 0px;
   padding: 0px 0px 20px 80px;
-  background-color: #282828;
+  background-color: var(--base-divbg);
 }
 
 .flatbgbuttonp {
   margin: -120px 0px 0px 0px;
   padding: 0px 0px 20px 38%;
-  background-color: #282828;
+  background-color: var(--base-divbg);
   font-weight: 700;
 }
 

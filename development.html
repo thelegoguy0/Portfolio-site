@@ -3,8 +3,10 @@
 <html>
 <head>
   <title>Luke Smit - Portfolio development</title>
-  <link rel="stylesheet" href="Styles/styles.css">
-  <link rel="stylesheet" href="Styles/styles_paragraphs.css">
+  <link rel="stylesheet" href="Styles/Style_base.css">
+  <link rel="stylesheet" href="Styles/Style_NavBar.css">
+  <script type="text/javascript" src="lightmode.js" defer></script>
+
 <style> 
 
 </style>
@@ -46,7 +48,11 @@
 
   <script>
   includeHTML();
-  </script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+  }
+</script>
   
 
 <h1>Hi, This is where my development will go!</h1>
