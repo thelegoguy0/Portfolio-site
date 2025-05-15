@@ -3,22 +3,26 @@
 
 :root{
   --base-textfill: rgb(255, 255, 255); 
+  --base-textofffill: #f9f9f9;
+  --base-textsubfill: #929292;
   --base-textstroke: rgb(0, 0, 0);
-  --base-bgfill: #1c1c1c;
-  --base-divbg: #383838;
+  --base-bgfill: #202022; /* prev #1c1c1c*/
+  --base-divbg: #454a4e; /* prev #383838*/
   --base-primcol: ;
   --base-acctcol: #256EAF;
-  --base-acctshad: ;
+  --base-acctshad: #284866; /* prev #23394d*/
 }
 
 .lightmode{
   --base-textfill: rgb(0, 0, 0); 
-  --base-textstroke: rgb(255, 255, 255); 
-  --base-bgfill: #c9c9c9;
-  --base-divbg: #8f8f8f;
+  --base-textofffill: #1a1a1a;
+  --base-textsubfill: #696969;
+  --base-textstroke: rgb(14, 13, 13); 
+  --base-bgfill: #ffffff; /* prev #c9c9c9*/
+  --base-divbg: #afb8bb; /* prev #8f8f8f*/
   --base-primcol: ;
   --base-acctcol: #256EAF;
-  --base-acctshad: ;
+  --base-acctshad: #5a90c2;
 }
 
 

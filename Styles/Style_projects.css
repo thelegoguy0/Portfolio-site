@@ -80,8 +80,7 @@
 }
 
 .flatbgsubh {
-  -webkit-text-fill-color:  var(--base-textsubfill);
-;
+  -webkit-text-fill-color:#929292;
   text-align: center;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
