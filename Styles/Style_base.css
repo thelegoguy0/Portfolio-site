@@ -45,7 +45,7 @@ p{
   color:#000000;
   -webkit-text-fill-color: var(--base-textfill);
   -webkit-text-stroke-color: var(--base-textstroke);
-  font-size: 1.5em;
+  font-size: calc(0.6em + 1vmax);
 }
 
 h1 {
@@ -53,7 +53,7 @@ h1 {
   color: rgb(0, 0, 0);
   -webkit-text-fill-color: var(--base-textfill);
   -webkit-text-stroke-color: var(--base-textstroke);
-  font-size: 50px;
+  font-size: calc(20px + 3vw);
   
 }
 
@@ -62,7 +62,7 @@ h2 {
   color: rgb(0, 0, 0);
   -webkit-text-fill-color: var(--base-textfill);
   -webkit-text-stroke-color: var(--base-textstroke);
-  font-size: 35px;
+  font-size: calc(10px + 2vw);
   
 }
 
