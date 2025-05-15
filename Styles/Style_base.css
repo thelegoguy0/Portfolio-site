@@ -5,8 +5,10 @@
   --base-textfill: rgb(255, 255, 255); 
   --base-textstroke: rgb(0, 0, 0);
   --base-bgfill: #1c1c1c;
-  --base-divbg: #282828;
-  --base-col: ;
+  --base-divbg: #383838;
+  --base-primcol: ;
+  --base-acctcol: #256EAF;
+  --base-acctshad: ;
 }
 
 .lightmode{
@@ -14,7 +16,9 @@
   --base-textstroke: rgb(255, 255, 255); 
   --base-bgfill: #c9c9c9;
   --base-divbg: #8f8f8f;
-  --base-col: ;
+  --base-primcol: ;
+  --base-acctcol: #256EAF;
+  --base-acctshad: ;
 }
 
 
@@ -56,3 +60,32 @@ h2 {
   
 }
 
+
+
+
+#theme-switch{
+    height: 3vw;
+    width: 3vw;
+    padding: 0;
+    margin: 0.3vw;
+    border-radius: 25%;
+    background-color: var(--base-divbg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+}
+#theme-switch svg{
+    fill: var(--base-bgfill)
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+.lightmode #theme-switch svg:first-child{
+    display: none;
+}
+.lightmode #theme-switch svg:last-child{
+    display: block;
+}

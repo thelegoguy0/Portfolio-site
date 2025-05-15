@@ -12,7 +12,7 @@
     align-items: center;
 }
 #theme-switch svg{
-    fill: var(--base-bgfill)
+    fill: var(--base-primcol)
 }
 #theme-switch svg:last-child{
     display: none;
@@ -51,7 +51,7 @@ li a, .dropbtn {
 
 li a:hover, .dropdown:hover .dropbtn {
   
-  background-color: #256EAF;
+  background-color: var(--base-acctcol);
   /*
   background-color: red;
   */
@@ -69,7 +69,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #256EAF;
+  background-color: var(--base-acctcol);
   /*padding: 12px;*/ 
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(126, 124, 124, 0.2);
