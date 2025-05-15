@@ -14,37 +14,53 @@
 }
 
 .flatbgdiv {
+  position: relative;
   max-width: 1243px;
   margin: 5vw auto 0px;
-  padding: 0px 0px 75px 0px;
+  padding: 0;
   background-color: var(--base-divbg);
-  min-height: 800px;
+  /*min-height: 800px;
   /*background-size: 90% auto;*/
+}
+
+.imgdiv{
+  margin: 2vw 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .flatbgimg1 {
   position: relative;
-  top:10px;
-  right:0px;
-  bottom:5px;
-  left:5%;
-  margin: 0px 0px 0px 30px;
+  width: 20vw;
+  height: 30vw;
+  margin: 1vw 3vw;
   padding: 0px 0px 40px 0px;
-  background-color: var(--base-divbg);
 }
 .flatbgimg2 {
   position: relative;
+  width: 20vw;
+  height: 20vw;
   top:10px;
   right:0px;
   bottom:5px;
   left:5%;
 
-  margin: 0px 0px 0px 50px;
-  padding: 50px 0px 40px 40px;
+  margin: 0px 0px 0px 30px;
+  padding: 0px 0px 40px 40px;
   background-color: var(--base-divbg);
 }
 .flatbgimg3 {
   position: relative;
+  width: 20vw;
+  height: 30vw;
   top:10px;
   right:0px;
   bottom:5px;
