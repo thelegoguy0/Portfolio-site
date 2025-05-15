@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    if("theme-switch"){
 let lightmode = localStorage.getItem('lightmode')
 const themeSwitch = document.getElementById('theme-switch')
 
@@ -19,4 +20,5 @@ themeSwitch.addEventListener("click", ()=>{
     lightmode = localStorage.getItem('lightmode')
     lightmode !== "active" ? enableLightmode() : disableLightmode()
 })
+}
 })
