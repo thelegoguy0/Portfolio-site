@@ -53,6 +53,9 @@
   .h1carousel{
     font-size: calc(20px + 2.5vw);
     font-weight: 900;
+    -webkit-text-fill-color:#2581dd;
+    -webkit-text-stroke-color:#2581dd;
+
   } 
 }
 
@@ -60,6 +63,8 @@
   .h1carousel{
     font-size: calc(20px + 2vw);
     font-weight: 900;
+    -webkit-text-fill-color:#ddda25;
+    -webkit-text-stroke-color:#ddda25;
   } 
 }
 
@@ -67,6 +72,8 @@
   .h1carousel{
     font-size: calc(20px + 1.5vw);
     font-weight: 900;
+    -webkit-text-fill-color:#dd2525;
+    -webkit-text-stroke-color:#dd2525;
   } 
 }
 
@@ -74,6 +81,8 @@
   .h1carousel{
     font-size: calc(20px + 1vw);
     font-weight: 900;
+    -webkit-text-fill-color:#d425dd;
+    -webkit-text-stroke-color:#d425dd;
   } 
 }
 
