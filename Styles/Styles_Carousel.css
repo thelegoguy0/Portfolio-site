@@ -49,7 +49,7 @@
   animation: 17s ease-in-out 1.5s infinite forwards carousel2;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1090px){
   .h1carousel{
     font-size: calc(20px + 2.5vw);
     font-weight: 900;
