@@ -77,6 +77,14 @@
   } 
 }
 
+@media screen and (max-width: 1200px){
+  .h1carousel{
+    -webkit-text-fill-color:#31dd25;
+    -webkit-text-stroke-color:#31dd25;
+
+  } 
+}
+
 @keyframes carousel {
     0% {top: calc(-0em + -4px);} /* H1 N1 */
     10% {top: calc(-0em + -4px);} /* H1 N1 */
