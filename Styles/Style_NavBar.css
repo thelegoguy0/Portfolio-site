@@ -27,7 +27,7 @@
 ul {
   list-style-type: none;
   margin: 1vw 0vw 0px;
-  padding-right: 13vw;
+  padding-right: 8vw;
   /*padding-left: 260px;*/
   overflow: hidden;
   background-color: var(--base-divbg);
