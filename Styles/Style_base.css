@@ -18,11 +18,11 @@
 .lightmode{
   --base-textfill: #000000; 
   --base-textofffill: #1a1a1a;
-  --base-textsubfill: #696969;
+  --base-textsubfill: #4e4e4e;
   --base-textnavfill: #191919;
   --base-textstroke: rgb(14, 13, 13); 
   --base-bgfill: #ffffff; /* prev #c9c9c9*/
-  --base-bgopacity: rgba(255, 255, 255, 0.8);
+  --base-bgopacity: rgba(255, 255, 255, 0.75);
   --base-divbg: #afb8bb; /* prev #8f8f8f*/
   --base-primcol: ;
   --base-acctcol: #5a90c2;
@@ -72,10 +72,20 @@ h2 {
 hr {
   width: 70%;
   margin: 0px auto;
+  border-width: 0.2vw;
 }
 
 
-
+.clearfix{
+  overflow: auto;
+}
+/*
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+*/
 
 #theme-switch{
     height: 3vw;

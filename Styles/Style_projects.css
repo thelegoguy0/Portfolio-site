@@ -1,102 +1,39 @@
 
 
-.h1index {
+.h1proj {
   /*width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin: 50px -50vw 0px;*/
-  margin: 3vw 0px 0px;
-  padding: 3vw 2vw 0;
+  margin: 0 0 2vw;
+  padding: 0;
   font-size: calc(20px + 3vw);
   font-weight: 900;
+  text-align: center;
   /*border:3px dashed blue;*/
 }
 
-.flatbgdiv {
-  position: relative;
-  max-width: 1243px;
-  margin: 5vw auto 0px;
-  padding: 0;
-  background-color: var(--base-divbg);
-  /*min-height: 800px;
-  /*background-size: 90% auto;*/
+.psub{
+  margin: 6vw 0 0.5vw;
+  text-align: center;
 }
 
-.imgdiv{
-  margin: 2vw 0 0;
+/*
+Idea is to create left-right 'steps' of projects
+*/
+
+.h2proj{
+  margin: 1vw;
+}
+
+.projdivL{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.flatbgimg1 {
-  position: relative;
-  width: 20vw;
-  height: 30vw;
-  margin: 1vw 3vw;
-  padding: 0px 0px 40px 0px;
-}
-.flatbgimg2 {
-  position: relative;
-  width: 20vw;
-  height: 20vw;
-  top:10px;
-  right:0px;
-  bottom:5px;
-  left:5%;
-
-  margin: 0px 0px 0px 30px;
-  padding: 0px 0px 40px 40px;
-  background-color: var(--base-divbg);
-}
-.flatbgimg3 {
-  position: relative;
-  width: 20vw;
-  height: 30vw;
-  top:10px;
-  right:0px;
-  bottom:5px;
-  left:5%;
-
-  margin: 0px 40px 180px 0px;
-  padding: 0px 0px 40px 80px;
+  margin: 4vw 2vw 0;
+  max-width: 55vw;
   background-color: var(--base-divbg);
 }
 
-.flatbgh {
-  text-align: center;
-  margin: 5vw 0px 0px 0px;
-  padding: 40px 0px 0px 0px;
-  background-color: var(--base-divbg);
-  font-weight: bold;
+.projdivR{
+  width: 10vw;
 }
-
-.flatbgsubh {
-  -webkit-text-fill-color:#929292;
-  text-align: center;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  background-color: var(--base-divbg);
-}
-
-.flatbgp {
-  margin: 100px 0px 0px 0px;
-  padding: 0px 0px 20px 80px;
-  background-color: var(--base-divbg);
-}
-
-.flatbgbuttonp {
-  margin: -120px 0px 0px 0px;
-  padding: 0px 0px 20px 38%;
-  background-color: var(--base-divbg);
-  font-weight: 700;
-}
-
