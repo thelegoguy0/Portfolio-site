@@ -26,13 +26,14 @@
 
 ul {
   list-style-type: none;
-  margin: 1vw 0px 0px 0px;
+  margin: 1vw 0vw 0px;
   padding-right: 13vw;
   /*padding-left: 260px;*/
   overflow: hidden;
   background-color: var(--base-divbg);
   max-width: 100%;
   font-size: calc(0.3em + 1vmax);
+  font-weight: bold;
 }
 
 li {
@@ -41,11 +42,11 @@ li {
 
 li a, .dropbtn {
   display: inline-block;
-  color: var(--base-textfill);
+  color: var(--base-textnavfill);
   text-align: center;
   padding: calc(1.2vw) calc(2.8vw);
-  color: var(--base-textofffill); 
-  margin-left: 3px;
+  color: var(--base-textnavfill); 
+  margin-left: 0.2vw;
   text-decoration: none;
 }
 
@@ -71,14 +72,16 @@ li.dropdown {
   position: absolute;
   background-color: var(--base-acctcol);
   /*padding: 12px;*/ 
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(126, 124, 124, 0.2);
+  min-width: 16vw;
+  /*box-shadow: 0px 8px 16px 0px rgba(126, 124, 124, 0.2);
+  commented out on account of shade colour doing goofy things
+  */
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: #e6e6e6;
-  padding: 12px 16px;
+  color: var(--base-textnavfill);
+  padding: 0.8vw 1.4vw;
   text-decoration: none;
   display: block;
   text-align: left;

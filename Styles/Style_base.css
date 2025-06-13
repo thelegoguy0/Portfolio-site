@@ -2,27 +2,31 @@
 
 
 :root{
-  --base-textfill: rgb(255, 255, 255); 
+  --base-textfill: #ffffff; 
   --base-textofffill: #f9f9f9;
   --base-textsubfill: #929292;
+  --base-textnavfill: #e6e6e6;
   --base-textstroke: rgb(0, 0, 0);
   --base-bgfill: #202022; /* prev #1c1c1c*/
-  --base-divbg: #454a4e; /* prev #383838*/
+  --base-bgopacity: rgba(32, 32, 34, 0.85);
+  --base-divbg: #383838; /* prev #383838*//*454a4e*/
   --base-primcol: ;
   --base-acctcol: #256EAF;
   --base-acctshad: #284866; /* prev #23394d*/
 }
 
 .lightmode{
-  --base-textfill: rgb(0, 0, 0); 
+  --base-textfill: #000000; 
   --base-textofffill: #1a1a1a;
   --base-textsubfill: #696969;
+  --base-textnavfill: #191919;
   --base-textstroke: rgb(14, 13, 13); 
   --base-bgfill: #ffffff; /* prev #c9c9c9*/
+  --base-bgopacity: rgba(255, 255, 255, 0.8);
   --base-divbg: #afb8bb; /* prev #8f8f8f*/
   --base-primcol: ;
-  --base-acctcol: #256EAF;
-  --base-acctshad: #5a90c2;
+  --base-acctcol: #5a90c2;
+  --base-acctshad: #256EAF;
 }
 
 
@@ -30,7 +34,6 @@
 * {
   font-family: 'Roboto', sans-serif;
   /* Other nice font: Verdana*/
-  
 }
 
 body{
@@ -68,7 +71,7 @@ h2 {
 
 hr {
   width: 70%;
-  margin: 3vw auto;
+  margin: 0px auto;
 }
 
 

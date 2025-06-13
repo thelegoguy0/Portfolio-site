@@ -6,17 +6,50 @@
   left: 50%;
   right: 50%;
   margin: 50px -50vw 0px;*/
-  margin: 3vw 0px 0px;
+  opacity: 1.0 !important;
+  margin: 0;
   padding: 3vw 2vw 0;
   font-size: calc(20px + 3vw);
   font-weight: 900;
+  position: relative;
   /*border:3px dashed blue;*/
+}
+
+.bgtest {
+  position: relative;
+  height: auto;
+  padding: 3vw 0 5vw;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://drive.google.com/thumbnail?id=1LKZFg1k73dhyUxUT5oXxzme2d2ANYznd&sz=w1000");
+  background-size: cover;
+}
+.bgtest::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: var(--base-bgopacity);
+}
+
+.emptybgdiv {
+  position: relative;
+  top: 0px;
+  background-color: var(--base-divbg);
+  min-width: 100vw;
+  margin: 0px 0 2vw;
+  /*min-height: 800px;
+  /*background-size: 90% auto;*/
 }
 
 .flatbgdiv {
   position: relative;
   max-width: 80vw;
-  margin: 5vw auto 0px;
+  margin: 0vw auto 0;
   padding: 0;
   background-color: var(--base-divbg);
   /*min-height: 800px;
@@ -24,7 +57,7 @@
 }
 
 .imgdiv{
-  margin: 2vw 0 0;
+  margin: 0vw 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -41,9 +74,10 @@
   position: relative;
   width: 20vw;
   height: 30vw;
-  margin: 1vw 3vw;
-  padding: 0px 0px 40px 0px;
+  margin: 1vw 3vw 2vw;
+  padding: 0;
 }
+
 .flatbgimg2 {
   position: relative;
   width: 20vw;
@@ -73,7 +107,7 @@
 
 .flatbgh {
   text-align: center;
-  margin: 5vw 0px 0px 0px;
+  margin: 0;
   padding: 2vw 0px 0px 0px;
   background-color: var(--base-divbg);
   font-weight: bold;
@@ -83,20 +117,23 @@
   -webkit-text-fill-color:  var(--base-textsubfill);
 ;
   text-align: center;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0;
+  padding: 0;
   background-color: var(--base-divbg);
 }
 
 .flatbgp {
-  margin: 100px 0px 0px 0px;
-  padding: 0px 0px 20px 80px;
-  background-color: var(--base-divbg);
+  margin: 0;
+  padding: 1vw 2vw;
+  border-radius: 1.5vw;
+  background-color: var(--base-acctcol);
 }
 
 .flatbgbuttonp {
-  margin: -120px 0px 0px 0px;
-  padding: 0px 0px 20px 38%;
+  /*margin:  0px 0px 0px;
+  padding: 0px 0px 20px 0px;
+  */
+  text-align: center;
   background-color: var(--base-divbg);
   font-weight: 700;
 }
