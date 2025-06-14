@@ -37,7 +37,7 @@
 }
 
 body{
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   background-color: var(--base-bgfill)
@@ -61,7 +61,7 @@ h1 {
 }
 
 h2 {
-  margin: 35px;
+  margin: 35vw;
   color: rgb(0, 0, 0);
   -webkit-text-fill-color: var(--base-textfill);
   -webkit-text-stroke-color: var(--base-textstroke);
@@ -71,7 +71,7 @@ h2 {
 
 hr {
   width: 70%;
-  margin: 0px auto;
+  margin: 0vw auto;
   border-width: 0.2vw;
 }
 
@@ -79,6 +79,7 @@ hr {
 .clearfix{
   overflow: auto;
 }
+
 /*
 .clearfix::after {
   content: "";

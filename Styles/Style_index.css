@@ -19,8 +19,6 @@
   position: relative;
   height: auto;
   padding: 3vw 0 5vw;
-  align-items: center;
-  justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("https://drive.google.com/thumbnail?id=1LKZFg1k73dhyUxUT5oXxzme2d2ANYznd&sz=w1000");
@@ -67,7 +65,7 @@
 .flatbgimg1 {
   position: relative;
   width: 20vw;
-  height: 30vw;
+  max-height: 27vw;
   margin: 1vw 3vw 2vw;
   padding: 0;
 }
@@ -83,10 +81,9 @@
 
 .flatbgsubh {
   -webkit-text-fill-color:  var(--base-textsubfill);
-;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0 0 1vw;
   background-color: var(--base-divbg);
 }
 
@@ -104,5 +101,6 @@
   text-align: center;
   background-color: var(--base-divbg);
   font-weight: 700;
+  padding: 0 0 1vw;
 }
 
