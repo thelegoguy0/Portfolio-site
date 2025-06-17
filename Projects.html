@@ -40,6 +40,9 @@
     }
   };
 </script>
+<script type="text/javascript" src="JQ/jquery-3.7.1.min.js"></script>
+<script src="Scroll.js"></script>
+
 
 <button id="theme-switch">
   <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3">
@@ -61,136 +64,216 @@
     function myFunction() {
       var element = document.body;
       element.classList.toggle("light-mode");
-    }
+    }    
   </script>
 
-  <p class="psub">Take a look at some of my</p>
-  <h1 class="h1proj">Projects!</h1>
+  <div class="content">
+    <p class="psub">Take a look at some of my</p>
+    <h1 class="h1proj">Projects!</h1>
 
-  <hr>
+    <hr>
 
-  <div class="projbar clearfix">
-    <div class="projdiv-L">
-      <a href="Projects/FBP.html"><img
-          src="https://drive.google.com/thumbnail?id=1Iq0iaeZNvapJJp7ZRRi7cskLX80tg7kH&sz=w1000"></a>
-      <h2 class="h2proj"><a href="Projects/FBP.html">Neurodiversity in Focus</a>
-      </h2>
-      <p class="p2sub">DPB390, Final Bachelor Project</p>
-      <p> Project description blahblahblahblahblahblah wow so much fun huh,
-        time for project script to go down further loll</p>
-      <hr class="hrdiv">
-      <p class="ptags">
-        <ins>T&R </ins></p>
-      <p class="ptags">
-        <ins>U&S</ins></p>
-      <p class="ptags">
-        <ins>C&A</ins></p>  
-      <p class="ptags">
-        <ins>MD&C</ins></p>
-      <p class="ptags"> 
-        <ins>B&E</ins></p> 
-        
-      
-    </div>
-
-    <div class="skilldiv-R">
-      <p>
-        DPB390
-        <br>
-        <br>2024-2025, Sem. B
-        <br>
-        <br>June 11<span style="font-size:0.7em; vertical-align: super;">th</span> 2025
-      </p>
-    </div>
-  </div>
+<!--
+    <p class="p2sub">
+      Sort by: (To be implemented)
+    </p>
+    <p class="ptags">
+      Technology and Realisation
+    </p>
+    <p class="ptags">
+      User and Society
+    </p>
+-->
 
 
-  <div class="projbar clearfix">
-    <div class="skilldiv-L">
-      <p>
-        Course code:
-        <br>DPB310
-        <br>
-        <br>2024-2025, Sem. B
-        <br>
-        <br>June 11<span style="font-size:0.7em; vertical-align: super;">th</span> 2025
-      </p>
-    </div>
+    <section class="projbar clearfix">
+      <div class="projdiv-L">
+        <a href="Projects/FBP.html"><img
+            src="https://drive.google.com/thumbnail?id=1Iq0iaeZNvapJJp7ZRRi7cskLX80tg7kH&sz=w1000"></a>
+        <h2 class="h2proj"><a href="Projects/FBP.html">Neurodiversity in Focus</a>
+        </h2>
+        <p class="p2sub">DPB390, Final Bachelor Project</p>
+        <p> Project description blahblahblahblahblahblah wow so much fun huh,
+          time for project script to go down further loll</p>
+        <div class="spacebar">
+        </div>
+        <hr class="hrdiv">
+        <p class="ptags">
+          <ins>T&R </ins>
+        </p>
+        <p class="ptags">
+          <ins>U&S</ins>
+        </p>
+        <p class="ptags">
+          <ins>C&A</ins>
+        </p>
+        <p class="ptags">
+          <ins>MD&C</ins>
+        </p>
+        <p class="ptags">
+          <ins>B&E</ins>
+        </p>
+        <p class="ptags">
+          <ins>DRP</ins>
+        </p>
+        <p class="ptags">
+          <ins>PS</ins>
+        </p>
+      </div>
 
-    <div class="projdiv-R">
-      <a href="Projects/FBP.html"><img
-          src="https://drive.google.com/thumbnail?id=1Iq0iaeZNvapJJp7ZRRi7cskLX80tg7kH&sz=w1000"></a>
-      <h2 class="h2proj"><a href="Projects/Internship.html">Internship</a>
-      </h2>
-      <p> Project description blahblahblahblahblahblah wow so much fun huh,
-        time for project script to go down further loll</p>
-      <hr class="hrdiv">
-      <p class="ptags">
-        <ins>T&R </ins></p>
-      <p class="ptags">
-        <ins>U&S</ins></p>
-      <p class="ptags">
-        <ins>C&A</ins></p>  
-      <p class="ptags">
-        <ins>MD&C</ins></p>
-      <p class="ptags"> 
-        <ins>B&E</ins></p> 
-    </div>
+      <div class="skilldiv-R">
+        <p>
+          DPB390
+          <br>
+          <br>2024-2025, Sem. B
+          <br>
+          <br>June 11<span style="font-size:0.7em; vertical-align: super;">th</span> 2025
+        </p>
+      </div>
+    </section>
 
-  </div>
 
-  <div class="projbar clearfix">
-    <div class="projdiv-L clearfix">
-      <h2 class="h2proj"><a href="Projects/Project3.html">Project 3</a>
-      </h2>
-      <p> Project description blahblahblahblahblahblah wow so much fun huh,
-        time for project script to go down further loll</p>
-      <hr class="hrdiv">
-      <p class="ptags">
-        <ins>Technology and Realisation.</ins>
-        <ins>User and Society.</ins>
-      </p>
-    </div>
+    <section class="tag projbar clearfix">
+      <section class="skilldiv-L">
+        <p>
+          DPB310
+          <br>
+          <br>2024-2025, Sem. A
+          <br>
+          <br>January 6<span style="font-size:0.7em; vertical-align: super;">th</span> 2025
+        </p>
+      </section>
 
-    <div class="skilldiv-R">
-      <p>
-        Course code:
-        <br>DPB220
-        <br>
-        <br>2024-2025, Sem. B
-        <br>
-        <br>June 11<span style="font-size:0.7em; vertical-align: super;">th</span> 2025
-      </p>
-    </div>
-  </div>
+      <section class="projdiv-R">
+        <a href="Projects/Internship.html"><img
+            src="https://drive.google.com/thumbnail?id=1ALtkb9XTMF5rZiDSlJbrs-daLNeX08El&sz=w1000"></a>
+        <h2 class="h2proj"><a href="Projects/Internship.html">Mindpact</a>
+        </h2>
+        <p class="p2sub">DPB310, Internship National Company</p>
+        <p> Project description blahblahblahblahblahblah wow so much fun huh,
+          time for project script to go down further loll</p>
+        <div class="spacebar">
+        </div>
+        <hr class="hrdiv">
+        <p class="ptags">
+          <ins>T&R </ins>
+        </p>
+        <p class="ptags">
+          <ins>U&S</ins>
+        </p>
+        <p class="ptags">
+          <ins>C&A</ins>
+        </p>
+        <p class="ptags">
+          <ins>MD&C</ins>
+        </p>
+        <p class="ptags">
+          <ins>B&E</ins>
+        </p>
+        <p class="ptags">
+          <ins>DRP</ins>
+        </p>
+        <p class="ptags">
+          <ins>PS</ins>
+        </p>
+      </section>
 
-  <div class="projbar clearfix">
-    <div class="skilldiv-L">
-      <p>
-        Course code:
-        <br>DPB210
-        <br>
-        <br>2024-2025, Sem. B
-        <br>
-        <br>June 11<span style="font-size:0.7em; vertical-align: super;">th</span> 2025
-      </p>
-    </div>
+    </section>
 
-    <div class="projdiv-R">
-      <h2 class="h2proj"><a href="Projects/Project2.html">Project 2</a>
-      </h2>
-      <p> Project description blahblahblahblahblahblah wow so much fun huh,
-        time for project script to go down further loll</p>
-      <hr class="hrdiv">
-      <p class="ptags">
-        <ins>Technology and Realisation.</ins>
-        <ins>User and Society.</ins>
-      </p>
-    </div>
+    <section class="tag-R projbar clearfix">
+      <section class="projdiv-L clearfix">
+        <a href="Projects/Project3.html"><img
+            src="https://drive.google.com/thumbnail?id=16hzlE1EtjdZWpu3w5z3o2FrVcKt3LRKu&sz=w1000"></a>
+        <h2 class="h2proj"><a href="Projects/Project3.html">Project 3</a>
+        </h2>
+        <p> Project description blahblahblahblahblahblah wow so much fun huh,
+          time for project script to go down further loll</p>
+        <div class="spacebar">
+        </div>
+        <hr class="hrdiv">
+        <p class="ptags">
+          <ins>T&R </ins>
+        </p>
+        <p class="ptags">
+          <ins>U&S</ins>
+        </p>
+        <p class="ptags">
+          <ins>C&A</ins>
+        </p>
+        <p class="ptags">
+          <ins>MD&C</ins>
+        </p>
+        <p class="ptags">
+          <ins>B&E</ins>
+        </p>
+        <p class="ptags">
+          <ins>DRP</ins>
+        </p>
+        <p class="ptags">
+          <ins>PS</ins>
+        </p>
+      </section>
 
-  </div>
+      <section class="skilldiv-R">
+        <p>
+          Course code:
+          <br>DPB220
+          <br>
+          <br>2023-2024, Sem. B
+          <br>
+          <br>June 12<span style="font-size:0.7em; vertical-align: super;">th</span> 2024
+        </p>
+      </section>
+    </section>
 
-  <!--
+    <section class="tag projbar clearfix">
+      <section class="skilldiv-L">
+        <p>
+          Course code:
+          <br>DPB210
+          <br>
+          <br>2023-2024, Sem. A
+          <br>
+          <br>February 20<span style="font-size:0.7em; vertical-align: super;">th</span> 2024
+        </p>
+      </section>
+
+      <section class="projdiv-R">
+        <a href="Projects/Project2.html"><img
+            src="https://drive.google.com/thumbnail?id=1hwMo510gzykHABRuv7Y_5NRWhgejlrOj&sz=w1000"></a>
+        <h2 class="h2proj"><a href="Projects/Project2.html">Project 2</a>
+        </h2>
+        <p> Project description blahblahblahblahblahblah wow so much fun huh,
+          time for project script to go down further loll</p>
+        <div class="spacebar">
+        </div>
+        <hr class="hrdiv">
+        <p class="ptags">
+          <ins>T&R </ins>
+        </p>
+        <p class="ptags">
+          <ins>U&S</ins>
+        </p>
+        <p class="ptags">
+          <ins>C&A</ins>
+        </p>
+        <p class="ptags">
+          <ins>MD&C</ins>
+        </p>
+        <p class="ptags">
+          <ins>B&E</ins>
+        </p>
+        <p class="ptags">
+          <ins>DRP</ins>
+        </p>
+        <p class="ptags">
+          <ins>PS</ins>
+        </p>
+      </section>
+
+    </section>
+
+    <!--
 <div class="projbar clearfix">
   <div class="projdiv-L clearfix">
     <h2><a href="Projects/Project1.html">Project 1</a>
@@ -216,32 +299,54 @@
 </div>
 -->
 
-  <div class="projbar clearfix">
-    <div class="projdiv-L">
-      <h2 class="h2proj"><a href="Projects/Digital_Craft.html">Digital Craftmanship</a>
-      </h2>
-      <p> Project description blahblahblahblahblahblah wow so much fun huh,
-        time for project script to go down further loll</p>
-      <hr class="hrdiv">
-      <p class="ptags">
-        <ins>Technology and Realisation.</ins>
-        <ins>User and Society.</ins>
-      </p>
-    </div>
+    <section class="tag-R projbar clearfix">
+      <section class="projdiv-L">
+        <a href="Projects/Digital_Craft.html"><img
+            src="https://drive.google.com/thumbnail?id=1hwMo510gzykHABRuv7Y_5NRWhgejlrOj&sz=w1000"></a>
+        <h2 class="h2proj"><a href="Projects/Digital_Craft.html">Digital Craftmanship</a>
+        </h2>
+        <p> Project description blahblahblahblahblahblah wow so much fun huh,
+          time for project script to go down further loll</p>
+        <div class="spacebar">
+        </div>
+        <hr class="hrdiv">
+        <p class="ptags">
+          <ins>T&R </ins>
+        </p>
+        <p class="ptags">
+          <ins>U&S</ins>
+        </p>
+        <p class="ptags">
+          <ins>C&A</ins>
+        </p>
+        <p class="ptags">
+          <ins>MD&C</ins>
+        </p>
+        <p class="ptags">
+          <ins>B&E</ins>
+        </p>
+        <p class="ptags">
+          <ins>DRP</ins>
+        </p>
+        <p class="ptags">
+          <ins>PS</ins>
+        </p>
+      </section>
 
-    <div class="skilldiv-R">
-      <p>
-        Course code:
-        <br>DCB150
-        <br>
-        <br>2024-2025, Sem. B
-        <br>
-        <br>June 11<span style="font-size:0.7em; vertical-align: super;">th</span> 2025
-      </p>
-    </div>
+      <section class="skilldiv-R">
+        <p>
+          Course code:
+          <br>DCB150
+          <br>
+          <br>2024-2025, Sem. B
+          <br>
+          <br>June 11<span style="font-size:0.7em; vertical-align: super;">th</span> 2025
+        </p>
+      </section>
+
+    </section>
 
   </div>
-
 
   <div w3-include-html="SubBar.html"></div>
   <script type="text/javascript" src="lightmode.js" defer></script>

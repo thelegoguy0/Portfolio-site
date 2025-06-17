@@ -46,7 +46,7 @@ li a, .dropbtn {
   text-align: center;
   padding: calc(1.2vw) calc(2.8vw);
   color: var(--base-textnavfill); 
-  margin-left: 0.2vw;
+  margin-left: 0.1vw;
   text-decoration: none;
 }
 

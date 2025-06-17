@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-:root{
-  --base-textfill: #ffffff; 
+:root {
+  --base-textfill: #ffffff;
   --base-textofffill: #f9f9f9;
   --base-textsubfill: #929292;
   --base-textnavfill: #e6e6e6;
   --base-textstroke: rgb(0, 0, 0);
-  --base-bgfill: #202022; /* prev #1c1c1c*/
+  --base-bgfill: #202022;
+  /* prev #1c1c1c*/
   --base-bgopacity: rgba(32, 32, 34, 0.85);
-  --base-divbg: #383838; /* prev #383838*//*454a4e*/
+  --base-divbg: #383838;
+  /* prev #383838*/
+  /*454a4e*/
   --base-primcol: ;
   --base-acctcol: #256EAF;
-  --base-acctshad: #284866; /* prev #23394d*/
+  --base-acctshad: #284866;
+  /* prev #23394d*/
 }
 
-.lightmode{
-  --base-textfill: #000000; 
+.lightmode {
+  --base-textfill: #000000;
   --base-textofffill: #1a1a1a;
   --base-textsubfill: #4e4e4e;
   --base-textnavfill: #191919;
-  --base-textstroke: rgb(14, 13, 13); 
-  --base-bgfill: #ffffff; /* prev #c9c9c9*/
+  --base-textstroke: rgb(14, 13, 13);
+  --base-bgfill: #ffffff;
+  /* prev #c9c9c9*/
   --base-bgopacity: rgba(255, 255, 255, 0.75);
-  --base-divbg: #afb8bb; /* prev #8f8f8f*/
+  --base-divbg: #afb8bb;
+  /* prev #8f8f8f*/
   --base-primcol: ;
   --base-acctcol: #5a90c2;
   --base-acctshad: #256EAF;
@@ -34,18 +40,22 @@
 * {
   font-family: 'Roboto', sans-serif;
   /* Other nice font: Verdana*/
+
+  scroll-behavior: smooth;
+  scroll-padding: 1rem;
+
 }
 
-body{
+body {
   min-height: 100%;
   margin: 0;
   padding: 0;
   background-color: var(--base-bgfill)
 }
 
-p{
+p {
   margin: 30px;
-  color:#000000;
+  color: #000000;
   -webkit-text-fill-color: var(--base-textfill);
   -webkit-text-stroke-color: var(--base-textstroke);
   font-size: calc(0.6em + 1vmax);
@@ -57,16 +67,16 @@ h1 {
   -webkit-text-fill-color: var(--base-textfill);
   -webkit-text-stroke-color: var(--base-textstroke);
   font-size: calc(20px + 3vw);
-  
+
 }
 
 h2 {
-  margin: 35vw;
+  margin: 35px;
   color: rgb(0, 0, 0);
   -webkit-text-fill-color: var(--base-textfill);
   -webkit-text-stroke-color: var(--base-textstroke);
   font-size: calc(10px + 2vw);
-  
+
 }
 
 hr {
@@ -76,7 +86,7 @@ hr {
 }
 
 
-.clearfix{
+.clearfix {
   overflow: auto;
 }
 
@@ -88,29 +98,34 @@ hr {
 }
 */
 
-#theme-switch{
-    height: 3vw;
-    width: 3vw;
-    padding: 0;
-    margin: 0.3vw;
-    border-radius: 25%;
-    background-color: var(--base-divbg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 1vw;
-    left: 4vw;
+
+#theme-switch {
+  height: 3vw;
+  width: 3vw;
+  padding: 0;
+  margin: 0.3vw;
+  border-radius: 25%;
+  background-color: var(--base-divbg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1vw;
+  left: 4vw;
 }
-#theme-switch svg{
-    fill: var(--base-bgfill)
+
+#theme-switch svg {
+  fill: var(--base-bgfill)
 }
-#theme-switch svg:last-child{
-    display: none;
+
+#theme-switch svg:last-child {
+  display: none;
 }
-.lightmode #theme-switch svg:first-child{
-    display: none;
+
+.lightmode #theme-switch svg:first-child {
+  display: none;
 }
-.lightmode #theme-switch svg:last-child{
-    display: block;
+
+.lightmode #theme-switch svg:last-child {
+  display: block;
 }

@@ -1,3 +1,7 @@
+/*
+Derived from;
+https://www.youtube.com/watch?app=desktop&v=_gKEUYarehE
+*/
 document.addEventListener("DOMContentLoaded", () => {
 
 let lightmode = localStorage.getItem('lightmode')
