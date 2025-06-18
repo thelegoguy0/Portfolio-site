@@ -57,6 +57,12 @@
   overflow-x: clip;
 }
 
+
+/*
+Hexagon code derived from;
+https://stackoverflow.com/questions/41920706/css-hexagonal-button-with-rounded-corners
+*/
+
 .hexbox{
 position: relative;
 width: 10%;
