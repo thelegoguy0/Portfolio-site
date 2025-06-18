@@ -52,6 +52,10 @@
 }
 
 
+.content{
+  width: 100%;
+  overflow-x: clip;
+}
 
 .hexbox{
 position: relative;
@@ -59,6 +63,7 @@ width: 10%;
  float: left;
  height: 35vw;
  margin: 0 45vw 0 0;
+ padding: 0 -5vw 0 0;
 }
 
 .hex-L {
