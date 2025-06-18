@@ -1,38 +1,37 @@
-
-.h1title{
+.h1title {
   margin: 0vw 5vw 2vw;
   padding: 0;
   font-size: calc(20px + 3vw);
   font-weight: 600;
 }
 
-.h2title{
+.h2title {
   margin: 4vw 5vw 0vw;
   padding: 0vw;
   -webkit-text-fill-color: var(--base-textsubfill);
   font-size: calc(0.6em + 0.9vmax);
 }
 
-.h2exp{
+.h2exp {
   margin: 2vw 5vw;
   padding: 0vw;
   font-size: calc(0.6em + 0.9vmax);
 }
 
-.h2sub{
+.h2sub {
   margin: 3vw 3vw 0;
 }
 
-.ptext{
+.ptext {
   margin: 0.3vw 4vw 0;
   max-width: 80%;
 }
 
-.aoediv{
-    position: relative;
+.aoediv {
+  position: relative;
 }
 
-.btn{
+.btn {
   padding: 0;
   border-radius: 1.5vw;
   background-color: var(--base-acctcol);
@@ -43,7 +42,98 @@
   top: 1vw;
 }
 
-.btn p{
-   padding: 1vw 2vw;
-   margin: 0;
+.btn p {
+  padding: 1vw 2vw;
+  margin: 0;
+}
+
+.hrdown {
+  margin: 90vw 2vw 2vw;
+}
+
+
+
+.hexbox{
+position: relative;
+width: 10%;
+ float: left;
+ height: 35vw;
+ margin: 0 45vw 0 0;
+}
+
+.hex-L {
+  position: relative;
+  height: 30vw;
+  min-width: 30vw;
+  padding: 2vw 4vw;
+  margin: 0 1vw 1vw 0;
+  float: left;
+}
+
+.hex-L svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hex-M {
+  position: absolute;
+  height: 30vw;
+  min-width: 30vw;
+  padding: 2vw 4vw;
+  margin: 8vw;
+  right: -67vw;
+  top: 9.5vw;
+}
+
+.hex-M svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hex-R {
+  position: absolute;
+  height: 30vw;
+  min-width: 30vw;
+  padding: 2vw 4vw;
+  margin: 8vw;
+  right: -98vw;
+  top: 27vw;
+}
+
+.hex-R svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hexpath {
+  fill: var(--base-divbg)
+}
+
+.hexpath path {
+  stroke: var(--base-acctcol);
+  stroke-width: 1.5vw;
+}
+
+.hexpath text {
+  font-size: calc(0.6em + 0.1vmax);
+  fill: var(--base-textfill); 
+  text-anchor: middle;
+  x: 55;
+  y: 55;
+}
+
+.hextext{
+  
+   font-size: calc(0.6em);
+  fill: var(--base-textfill);
+  text-anchor: middle;
 }

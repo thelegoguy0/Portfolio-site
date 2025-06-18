@@ -96,6 +96,13 @@
   background-color: var(--base-acctcol);
 }
 
+.flatbgp a:hover{
+    background-color: var(--base-acctshad);
+    transition: all 0.2s;
+
+}
+
+
 .flatbgbuttonp {
   /*margin:  0px 0px 0px;
   padding: 0px 0px 20px 0px;

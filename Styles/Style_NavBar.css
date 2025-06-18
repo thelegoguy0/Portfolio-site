@@ -53,6 +53,7 @@ li a, .dropbtn {
 li a:hover, .dropdown:hover .dropbtn {
   
   background-color: var(--base-acctcol);
+  transition: all 0.2s;
   /*
   background-color: red;
   */
@@ -87,7 +88,10 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: var(--base-acctshad);}
+.dropdown-content a:hover {
+  background-color: var(--base-acctshad);
+  transition: all 0.2s;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
