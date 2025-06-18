@@ -64,9 +64,9 @@
 
 .flatbgimg1 {
   position: relative;
-  width: 20vw;
-  max-height: 27vw;
-  margin: 1vw 3vw 2vw;
+  max-width: 25vw;
+  height: 27vw;
+  margin: 1vw 1.5vw 2vw;
   padding: 0;
   border-radius: 1.7vw;
 

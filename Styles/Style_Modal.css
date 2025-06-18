@@ -1,0 +1,110 @@
+/*
+Derived from
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
+*/
+
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 5vw;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 0;
+    -webkit-text-fill-color: var(--base-bgfill);
+    width: 80%;
+    max-height: 85%;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animateleft;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animateleft;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animateleft {
+    from {
+        right: -30vw;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animateleft {
+    from {
+        right: -30vw;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    padding: 0 1vw;
+    color: var(--base-textfill);
+    float: right;
+    font-size: 3vw;
+    font-weight: bold;
+    -webkit-text-fill-color: var(--base-textfill);
+}
+
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-text-fill-color: var(--base-textnavfill);
+}
+
+.modal-header {
+    padding: 0.2vw 0vw;
+    background-color: var(--base-divbg);
+    color: white;
+}
+
+.modal-body {
+    padding: 2vw 3vw;
+}
+
+.modal-body p {
+    padding: 0;
+    margin: 0;
+    -webkit-text-fill-color: #000;
+}
+
+.modal-footer {
+    padding: 0.2vw 4vw;
+    background-color: var(--base-divbg);
+    color: white;
+    -webkit-text-fill-color: var(--base-textfill);
+}
