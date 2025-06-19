@@ -148,3 +148,11 @@ width: 10%;
   fill: var(--base-textfill);
   text-anchor: middle;
 }
+
+.hexsvg{
+  fill:var(--base-divbg);
+}
+
+.hexsvg a:hover{
+  fill:var(--base-acctshad)
+}

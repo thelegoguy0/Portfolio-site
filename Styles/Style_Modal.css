@@ -44,6 +44,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
     animation-duration: 0.4s
 }
 
+
+
 /* Add Animation */
 @-webkit-keyframes animateleft {
     from {
@@ -103,8 +105,23 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
 }
 
 .modal-footer {
-    padding: 0.2vw 4vw;
+    padding: 0.2vw 2vw;
     background-color: var(--base-divbg);
     color: white;
     -webkit-text-fill-color: var(--base-textfill);
+}
+
+
+.row{
+  margin: 0;
+    display: flex;
+  justify-content: center;
+}
+
+.row img{
+  margin: 0 auto;
+  max-width: 25%;
+/*
+  max-width: 23.5%;
+*/
 }
