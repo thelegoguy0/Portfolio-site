@@ -114,7 +114,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
 
 .row{
   margin: 0;
-    display: flex;
+  display: flex;
   justify-content: center;
 }
 
