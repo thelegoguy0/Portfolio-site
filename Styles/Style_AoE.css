@@ -154,5 +154,6 @@ width: 10%;
 }
 
 .hexsvg a:hover{
-  fill:var(--base-acctshad)
+  fill:var(--base-acctshad);
+  transition: all 0.2s;
 }

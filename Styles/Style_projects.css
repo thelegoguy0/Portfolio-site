@@ -39,6 +39,7 @@ Idea is to create left-right 'steps' of projects
 
 .p2text{
   margin: 0.7vw 0 0 2vw;
+  max-width: 55vw;
 }
 /*
 Wanted to try make these flexboxes but that did not work out 
