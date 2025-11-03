@@ -29,6 +29,7 @@ var span6 = document.getElementsByClassName("close")[5];
 
 // When the user clicks the button, open the modal 
 btn1.onclick = function () {
+    /*disableScrolling();*/
     modal1.style.display = "block";
 }
 btn2.onclick = function () {
@@ -51,6 +52,7 @@ btn6.onclick = function () {
 // When the user clicks on <span> (x), close the modal
 
 span.onclick = function () {
+    enableScrolling();
     modal1.style.display = "none";
 }
 span2.onclick = function () {
@@ -75,6 +77,7 @@ window.onclick = function (event) {
         || event.target == modal3 || event.target == modal4
         || event.target == modal5 || event.target == modal6
     ) {
+        enableScrolling();
         modal1.style.display = "none";
         modal2.style.display = "none";
         modal3.style.display = "none";
@@ -82,4 +85,22 @@ window.onclick = function (event) {
         modal5.style.display = "none";
         modal6.style.display = "none";
     }
+}
+
+
+/*
+may disable in future
+*/
+function disableScrolling(){
+    
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+    
+    /*pageCover.classList.remove("hidden");*/
+}
+
+function enableScrolling(){
+    window.onscroll=null;
+    /*cover.classList.add("hidden");*/
 }

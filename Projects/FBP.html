@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <title>Luke Smit - Portfolio FBP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../Styles/Style_base.css">
-  <link rel="stylesheet" href="../Styles/Style_base.css">
+  <link rel="stylesheet" href="../Styles/Style_projectbase.css">
   <link rel="stylesheet" href="../Styles/Style_NavBar.css">
-<style> 
+  <style>
 
-</style>
+  </style>
 </head>
 
 <script>
@@ -24,15 +25,15 @@
       if (file) {
         /*make an HTTP request using the attribute value as the file name:*/
         xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
+        xhttp.onreadystatechange = function () {
           if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
             /*remove the attribute, and call this function once more:*/
             elmnt.removeAttribute("w3-include-html");
             includeHTML();
           }
-        }      
+        }
         xhttp.open("GET", file, true);
         xhttp.send();
         /*exit the function:*/
@@ -40,30 +41,105 @@
       }
     }
   };
-  </script>
+</script>
 
 <body>
 
-  <div w3-include-html="/NavBar.html"></div> 
+  <div w3-include-html="/NavBar.html"></div>
 
-    <script>
-  includeHTML();
-  function myFunction() {
-    var element = document.body;
-    element.classList.toggle("light-mode");
-  }
-</script>
-  
-<button id="theme-switch">
-        <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-</button>
+  <script>
+    includeHTML();
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("light-mode");
+    }
+  </script>
+
+  <button id="theme-switch">
+    <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3">
+      <path
+        d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3">
+      <path
+        d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+    </svg>
+  </button>
+
+  <section class="ProjHeader clearfix">
+
+    <div>
+      <h1 class="h1title">Neurodiversity in Focus</h1>
+      <h2 class="h1subtext">DPB390, Final Bachelor Project</h2>
+    </div>
+
+    <div class="ProjInfoTab">
+      <h2 class="h1subtext">
+        2024-2025, Semester B <br>
+        2025-2026, Semester A <br>
+        Deadline: January 14<span class="suptext">th</span>, 2025
+        <!--
+      <br><br>
+      T&R, U&S, C&A, MD&C, B&E, DRP, PS
+    -->
+      </h2>
+    </div>
+
+  </section>
+
+  <section class="ProjBody clearfix">
+    <div>
+      <h2>
+        Abstract;
+      </h2>
+      <p>
+        Neurodivergent individuals –individuals with Autism,
+        Attention Deficit Disorder (ADD)/ Attention Deficit
+        Hyperactivity Disorder (ADHD), Dyslexia, etc – tend to
+        be inhibited in their self-regulation skills. This means
+        that, in a study setting, neurodivergent students may have
+        a difficult time getting started with work, or suffer
+        increased consequences from losing focus.<br><br>
+        As a project, Neurodiversity in Focus explores the
+        experience of focus and self-motivation of neurodiverse
+        students while studying and working. Through user
+        studies, namely a survey and design probe (diary study),
+        common struggles and challenges are identified. The data
+        from these studies provided a research basis for design
+        iterations. These iterations led to the concept of Mind
+        Clouds; a tool for neurodiverse students to improve
+        awareness of distracting factors in their environment.
+        Mind Clouds encourages users to gain initial task insight
+        by pushing them to write down specific tasks, whilst also
+        providing insight into distractions, recorded by spinning
+        and pressing the tool.
+      </p>
+    </div>
+    <div>
+      <img src="https://drive.google.com/thumbnail?id=1rw19MC6cUCoPUci3AoBmVfR8POeK__1D&sz=w1000"> </img>
+    </div>
+
+  </section>
+
+  <div class="ProjExtTab">
+    <h2>
+      More information
+    </h2>
+    <p>
+      <b>Students;</b>
+      <br>Luke
+      <br><b>Coach</b>
+      <br>S., Lucas
+      <br>
+      <br>T&R, U&S, C&A, MD&C, B&E, DRP, PS
+    </p>
+  </div>
 
 
-<h1>Hi, This is where my FBP info will go!</h1>
 
- <div w3-include-html="/SubBar.html"></div> 
-   <script type="text/javascript" src="/lightmode.js" defer></script>
+  <div w3-include-html="/SubBar.html"></div>
+  <script type="text/javascript" src="/lightmode.js" defer></script>
 
 </body>
+
 </html>

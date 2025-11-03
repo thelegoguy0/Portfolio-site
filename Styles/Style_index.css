@@ -21,7 +21,7 @@
   padding: 3vw 0 5vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("https://drive.google.com/thumbnail?id=1LKZFg1k73dhyUxUT5oXxzme2d2ANYznd&sz=w1000");
+  background-image: var(--img-indexback);
   background-size: cover;
 }
 .bgtest::before{
@@ -33,6 +33,10 @@
   right: 0px;
   background-color: var(--base-bgopacity);
 }
+
+/*.hr{
+  border-color: initial !important; 
+}*/
 
 .emptybgdiv {
   position: relative;
@@ -54,31 +58,92 @@
   /*background-size: 90% auto;*/
 }
 
+/*
 .imgdiv{
-  margin: 0vw 0 0;
+  margin: 0;
+  padding: 1vw 0 2vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
+}
+*/
+
+.imgdiv{
+  padding: 1vw 0 2vw;
 }
 
 .flatbgimg1 {
   position: relative;
   max-width: 25vw;
   height: 27vw;
-  margin: 1vw 1.5vw 2vw;
-  padding: 0;
+  margin:0;
+  padding:  0/*1vw 1.5vw 2vw*/;
   border-radius: 1.7vw;
-
+  transition: all 0.2s;
 }
 
+.imgdivitem{
+  position: relative;
+  max-width: 25vw;
+  height: 27vw;
+  margin:0;
+  padding:  0/*1vw 1.5vw 2vw*/;
+  border-radius: 1.7vw;
+  transition: all 0.2s;
+}
+
+.flatbgimg1:hover {
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: var(--base-acctcolopac);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 0 0 1.7vw 1.7vw;
+  transition: all .2s ease;
+}
+
+.flatbgimg1 h2{
+  position: absolute;
+  margin: 0.5vw 1vw;
+  z-index: 1;
+}
+
+.flatbgimg1:hover .overlay{
+  height: 40%;
+  opacity: 1;
+}
+
+
+
+.flatbgimgpush {
+  margin: 0 1vw;
+}
 
 .flatbgh {
   text-align: center;
   margin: 0;
   padding: 2vw 0px 0px 0px;
+  /*color:  var(--base-textfill);*/
   background-color: var(--base-divbg);
   font-weight: bold;
+}
+
+.flatbgh a{
+  transition: all 0.2s;
+}
+.flatbgh a:hover{
+  -webkit-text-fill-color:  var(--base-textsubfill);
+  transition: all 0.2s;
 }
 
 .flatbgsubh {
@@ -93,15 +158,9 @@
   margin: 0;
   padding: 1vw 2vw;
   border-radius: 1.5vw;
-  background-color: var(--base-acctcol);
+  background-color: var(--base-acctshad);
+  transition: all 0.2s;
 }
-
-.flatbgp a:hover{
-    background-color: var(--base-acctshad);
-    transition: all 0.2s;
-
-}
-
 
 .flatbgbuttonp {
   /*margin:  0px 0px 0px;
@@ -111,5 +170,15 @@
   background-color: var(--base-divbg);
   font-weight: 700;
   padding: 0 0 1vw;
+  transition: all 0.2s;
 }
 
+.flatbgbuttonp:hover{
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
+.flatbgbuttonp a:hover{
+  background-color: var(--base-acctcol);
+  transition: all 0.2s;
+}

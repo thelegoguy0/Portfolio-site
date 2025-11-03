@@ -3,7 +3,6 @@ Derived from
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
 */
 
-
 .modal {
     display: none;
     /* Hidden by default */
@@ -111,17 +110,30 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
     -webkit-text-fill-color: var(--base-textfill);
 }
 
+.modal-footer p{
+    font-size: calc(0.5em + 0.7vmax);
+}
 
 .row{
-  margin: 0;
+  margin: 0.3vw 0;
   display: flex;
   justify-content: center;
 }
 
 .row img{
   margin: 0 auto;
-  max-width: 25%;
-/*
+  max-width: 22.5%;
+  /*
   max-width: 23.5%;
 */
+}
+
+.row a{
+    margin: 0 auto;
+    max-width: 22.5%;
+}
+
+.row a img{
+    margin: 0;
+    max-width: 100%;
 }

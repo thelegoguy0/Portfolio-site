@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>Luke Smit - Portfolio about</title>
+  <title>Luke Smit - Portfolio Vision</title>
   <link rel="stylesheet" href="Styles/Style_base.css">
   <link rel="stylesheet" href="Styles/Style_Development.css">
   <link rel="stylesheet" href="Styles/Style_NavBar.css">
@@ -73,24 +73,28 @@
   <div class="Visionsub">
     <p class="Visionsubt">
       My vision is one heavily formed through my neurodivergent identity
-      <br>and my own experiences. Some of my core design focuses stem
-      <br>from activities that I enjoy doing, and I hope to follow these to
-      <br>develop myself and my skills further.
+      <br>and other own experiences. Some of my core design focuses stem
+      <br>from activities that I enjoy doing, and I hope to follow and explore
+      <br>these to develop myself and my skills even further.
     </p>
   </div>
 
 
   <hr>
   <div class="textdivsplit-R">
+    <button class="readmore">
     <h2>
       Vision
     </h2>
     <p class="headbr">
       <strong>Design, to me, is a means to empower people.</strong>
     </p>
-    <p>Ensuring technologies and devices work with users (rather than solely for or against users), in ways that are
+    </button>
+    <p class="content">
+      Ensuring technologies and devices work with users (rather than solely for or against users), in ways that are
       meaningful and important to them, is very important to me. Especially when focusing on neurodiversity, designing
       empowering technologies that support users in self-development can prove substantial in long-term change.
+      <br>
       Neurodivergent individuals have strengths that do not always have the space, means, or visibility to develop. <a
         href="/Vision.html#Refs">
         [2, 4]</a> Ensuring these qualities have the tools to grow can prove extremely beneficial to future generations
@@ -136,13 +140,15 @@
   </div>
 
   <div class="textdivsplit-L">
-    <h2>
+    <button class="readmore">
+      <h2>
       Professional Identity
     </h2>
     <p class="headbr">
       <strong>As a designer, I tend to be very research-focused</strong>
     </p>
-    <p>
+    </button>
+    <p class="content">
       I prefer working from knowledge and enjoy performing
       (exploratory) research. In projects, this means I need to have an understanding of the basis and many underlying
       factors influencing the topic or audience I am designing for.
@@ -183,18 +189,21 @@
 
 
 
+  <hr class="subhr">
 
   <div>
-    <h2>
-      References
-    </h2>
-
+    <button class="collapsible">
+      <h2>
+        References
+      </h2>
+    </button>
+    
     <!--
 Initially wanted to refer to every reference individually but page does not go down far enough for that to matter
 Could have the reference in question light up but that's a lot of extra optional work    
 -->
 
-    <p class="refs" id="Refs">
+    <p class="refs content" id="Refs">
       <span id="R1">[1] Thomas Armstrong. 2011. The power of neurodiversity: unleashing the advantages of your
         differently wired
         brain. Da Capo Lifelong, Cambridge, MA.</span><br>
@@ -232,7 +241,7 @@ Could have the reference in question light up but that's a lot of extra optional
 
   <div w3-include-html="SubBar.html"></div>
   <script type="text/javascript" src="lightmode.js" defer></script>
-
+  <script src="Collapse.js"></script>
 </body>
 
 </html>

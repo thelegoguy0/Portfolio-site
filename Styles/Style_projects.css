@@ -6,7 +6,7 @@
   left: 50%;
   right: 50%;
   margin: 50px -50vw 0px;*/
-  margin: 0 0 3vw;
+  margin: 0;
   padding: 0;
   font-size: calc(20px + 3vw);
   font-weight: 600;
@@ -20,13 +20,19 @@
   -webkit-text-fill-color:  var(--base-textsubfill);
 }
 
+.psub2{
+  margin: 1vw 0 1vw;
+  text-align: center;
+  -webkit-text-fill-color:  var(--base-textsubfill);
+}
+
 /*
 Idea is to create left-right 'steps' of projects
 */
 
 .h2proj{
   position: relative;
-  margin: 1.1vw  2vw 0.1vw !important;
+  margin: 1.1vw 2vw 0.1vw !important;
   padding: 0vw;
 }
 
@@ -41,13 +47,69 @@ Idea is to create left-right 'steps' of projects
   margin: 0.7vw 0 0 2vw;
   max-width: 55vw;
 }
+
+
 /*
 Wanted to try make these flexboxes but that did not work out 
 */
-.content{
+.pagecontent{
   max-width: 99vw;
   overflow: hidden;
 }
+
+.imgdivimg{
+  position: relative;
+  max-width: 20vw;
+  height: 20vw;
+  border-radius: 1.7vw;
+}
+
+.imgdivitem{
+  position: relative;
+  max-width: 20vw;
+  height: 20vw;
+  margin:0;
+  padding:  0/*1vw 1.5vw 2vw*/;
+  border-radius: 1.7vw;
+  transition: all 0.2s;
+}
+
+.imgdivitem:hover {
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: var(--base-acctcolopac);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 0 0 1.7vw 1.7vw;
+  transition: all .2s ease;
+}
+
+
+.imgdivitem p{
+  position: absolute;
+  margin: 0.5vw 1vw;
+  z-index: 1;
+}
+
+.imgdivitem:hover .overlay{
+  height: 38%;
+  opacity: 1;
+}
+
+
+.imgdivpush {
+  margin: 0 0.5vw;
+}
+
 
 .projbar{
   position: relative;
@@ -57,6 +119,19 @@ Wanted to try make these flexboxes but that did not work out
   align-items: center;
   max-width: 100%;
   max-height: 30vw;
+}
+
+.projbar img{
+  border-radius: 1.3vw !important;
+  padding: 0;
+  margin: 1vw inherit+1vw 1vw inherit+1vw;
+  transition: all 0.2s;
+}
+.projbar img:hover{
+  padding: 0;
+  margin: 1vw inherit+1vw 1vw inherit+1vw !important;
+  transform: scale(1.05);
+  transition: all 0.2s;
 }
 
 .spacebar{
@@ -76,8 +151,8 @@ Wanted to try make these flexboxes but that did not work out
 }
 
 .projdiv-L img{
-  padding: 1vw;  
-  margin: 0 0 0 1vw;
+  padding: 0;  
+  margin: 1vw 1vw 1vw 2vw;
   position: relative;
   max-height: 20vw;
   border-radius: 1.3vw;
@@ -103,8 +178,8 @@ Wanted to try make these flexboxes but that did not work out
 }
 
 .projdiv-R img{
-  padding: 1vw;
-  margin: 0 1vw 0 0;
+  padding: 0vw;
+  margin: 1vw 2vw 1vw 1vw;
   position: relative;
   height: 20vw;
   border-radius: 1.3vw;
@@ -131,6 +206,81 @@ Wanted to try make these flexboxes but that did not work out
   font-size: calc(0.5em + 0.5vmax);
   -webkit-text-fill-color:  var(--base-textsubfill);
   float: left;
+}
+
+.aptags{
+  position: relative;
+  text-align: center;
+  margin: 1vw 0 1vw 2vw;
+  font-size: calc(0.5em + 0.5vmax);
+  -webkit-text-fill-color:  var(--base-textofffill);
+  float: left;
+}
+
+.ptags .exptext{
+  visibility: hidden;
+  max-width: 10vw;
+  background-color: var(--base-toolbg);
+  -webkit-text-fill-color:  var(--base-textofffill);
+  text-align: center;
+  border-radius: 0.5vw;
+  padding: 0.4vw 0.5vw;
+  position: absolute;
+  z-index: 1;
+  bottom: 3vw;
+  left: 5vw;
+  margin-left: -8vw;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.ptags .exptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -1vw;
+  border-width: 1vw;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.aptags .exptext{
+  visibility: hidden;
+  max-width: 10vw;
+  background-color: var(--base-toolbg);
+  -webkit-text-fill-color:  var(--base-textofffill);
+  text-align: center;
+  border-radius: 0.5vw;
+  padding: 0.4vw 0.5vw;
+  position: absolute;
+  z-index: 1;
+  bottom: 3vw;
+  left: 5vw;
+  margin-left: -8vw;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.aptags .exptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -1vw;
+  border-width: 1vw;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.ptags:hover .exptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.aptags:hover .exptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 .tagdiv-L{

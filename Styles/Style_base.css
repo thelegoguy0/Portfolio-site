@@ -2,6 +2,7 @@
 
 
 :root {
+  --img-indexback: url("https://drive.google.com/thumbnail?id=1LKZFg1k73dhyUxUT5oXxzme2d2ANYznd&sz=w1000");
   --base-textfill: #ffffff;
   --base-textofffill: #f9f9f9;
   --base-textsubfill: #929292;
@@ -15,24 +16,40 @@
   /*454a4e*/
   --base-primcol: ;
   --base-acctcol: #256EAF;
+  --base-acctcolopac: #256EAFB3;
   --base-acctshad: #284866;
   /* prev #23394d*/
+  --base-toolbg: #555;
+
+  /*Carousel colours*/
+  --car-blue: #256EAF;
+  --car-red: #DD4B25;
+  --car-green: #31dd25;
 }
 
 .lightmode {
+  transition: all 0.2s;
   --base-textfill: #000000;
   --base-textofffill: #1a1a1a;
   --base-textsubfill: #4e4e4e;
   --base-textnavfill: #191919;
   --base-textstroke: rgb(14, 13, 13);
-  --base-bgfill: #ffffff;
+  --base-bgfill: #d1dde0;
   /* prev #c9c9c9*/
-  --base-bgopacity: rgba(255, 255, 255, 0.75);
-  --base-divbg: #afb8bb;
+  --base-bgopacity: rgba(209, 221, 224, 0.80);
+  --base-divbg: #9dabb0;
   /* prev #8f8f8f*/
   --base-primcol: ;
   --base-acctcol: #5a90c2;
-  --base-acctshad: #256EAF;
+  --base-acctcolopac: #5a90c2b3;
+  --base-acctshad: #7aa5cd; 
+  /* prev #256EAF */
+  --base-toolbg: #555;
+
+  /*Carousel colours*/
+  --car-blue: #0b4e88;
+  --car-red: #aa2b0c;
+  --car-green: #23ad19;
 }
 
 
@@ -80,14 +97,42 @@ h2 {
 }
 
 hr {
-  width: 70%;
+  width: 70vw;
   margin: 0vw auto;
   border-width: 0.2vw;
+  /*border-top: solid var(--base-bgfill);
+  border-right: inset var(--base-acctshad);
+  border-bottom: inset var(--base-acctshad);
+  border-left: solid var(--base-bgfill);*/
+  
 }
 
+.tophr{
+  margin: 0vw auto 2vw !important;
+}
+
+.subhr{
+  margin: 2vw auto 0vw !important;
+}
+
+/*
+img{
+  imgtypes https://www.game-oracle.com/blog/steam-store-images
+  Vertical Capsules
+  --imgVC-FBP:"https://drive.google.com/thumbnail?id=1Iq0iaeZNvapJJp7ZRRi7cskLX80tg7kH&sz=w1000";
+  --imgVC-Internship: ;
+  
+  upsettingly, this does not work
+}
+*/
 
 .clearfix {
   overflow: auto;
+}
+
+.suptext{
+  font-size: 0.7em;
+  vertical-align: super;
 }
 
 /*
@@ -97,6 +142,14 @@ hr {
   display: table;
 }
 */
+
+.imgdiv{
+  margin: 0;
+  padding: 1vw 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
 #theme-switch {
@@ -112,6 +165,7 @@ hr {
   position: absolute;
   top: 1vw;
   left: 4vw;
+  transition: all 0.2s;
 }
 
 #theme-switch svg {

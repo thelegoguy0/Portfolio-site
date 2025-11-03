@@ -1,67 +1,140 @@
-
-.h1title{
+.h1title {
   margin: 2vw 5vw 1vw;
   padding: 0;
   font-size: calc(20px + 3vw);
   font-weight: 600;
 }
 
-.h2sub{
+.h2sub {
   margin: 0 0 0 5vw !important;
   padding: 0vw;
   -webkit-text-fill-color: var(--base-textsubfill);
   font-size: calc(0.6em + 0.9vmax);
 }
 
-.textdivsplit-L{
-    width: 55%;
-    margin: 0 0 0 6vw;
+.textdivsplit-L {
+  width: 55%;
+  margin: 2vw 0 0 6vw;
 }
 
-.textdivsplit-L h2{
-margin: 3vw 0 2vw;
+.textdivsplit-L h2 {
+  margin: 0vw 0 1vw;
 }
 
-.textdivsplit-L p{
-margin: 0.5vw 0 0;
-font-size: calc(0.5em + 0.7vmax);
+.textdivsplit-L p {
+  margin: 0.5vw 0 0;
+  font-size: calc(0.5em + 0.7vmax);
 }
 
-.textdivsplit-R{
-    width: 55%;
-    margin: 0 0 0 39vw;
+.textdivsplit-R {
+  width: 55%;
+  margin: 2vw 0 0 39vw;
 }
 
-.textdivsplit-R h2{
-margin: 3vw 0 2vw;
+.textdivsplit-R h2 {
+  margin: 0vw 0 1vw;
 }
 
-.textdivsplit-R p{
-margin: 0.5vw 0 0;
-font-size: calc(0.5em + 0.7vmax);
+.textdivsplit-R p {
+  margin: 0.5vw 0 0;
+  font-size: calc(0.5em + 0.7vmax);
 }
 
-.refs{
-    margin: 0.5vw 5vw 0;
-    font-size: calc(0.5em + 0.7vmax);   
+.refs {
+  margin: 0.5vw 5vw 0;
+  font-size: calc(0.5em + 0.7vmax);
 }
 
-.headbr{
-    margin: 0 0 0 2vw;
-    font-size: calc(0.6em + 0.8vmax) !important;
+.headbr {
+  margin: 0 0 0 2vw;
+  font-size: calc(0.6em + 0.8vmax) !important;
 }
 
-.Visionsub{
-    margin: 2.5vw 3vw 3vw 5vw;
+.Visionsub {
+  margin: 2.5vw 3vw 3vw 5vw;
 }
 
-.Visionsubh{
-    margin: 0;
+.Visionsubh {
+  margin: 0;
 }
 
-.Visionsubt{
-    margin: 0.5vw 0 0;
-    font-size: calc(0.5em + 0.8vmax);
-    opacity: 0.7;   
+.Visionsubt {
+  margin: 0.5vw 0 0;
+  font-size: calc(0.5em + 0.8vmax);
+  opacity: 0.7;
 }
 
+
+/*
+https://jsfiddle.net/Q5Ewe/
+https://www.w3schools.com/howto/howto_js_collapsible.asp
+*/
+
+.collapsible {
+  margin: 1vw 0 0 3vw;
+  background-color: var(--base-bgfill);
+  cursor: pointer;
+  padding: 0;
+  width: 93vw;
+  border: none;
+  text-align: left;
+  outline: none;
+  border-radius: 2vw;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: var(--base-textfill);
+  font-size: 3vw;
+  font-weight: bold;
+  float: right;
+  margin: -6vw 3vw 2vw 6vw;
+}
+
+.collapsible:hover{
+  background-color: var(--base-divbg);
+  transition: all 0.2s;
+}
+
+.readmore {
+  margin: 1vw 0 0 -1.5vw;
+  background-color: var(--base-bgfill);
+  cursor: pointer;
+  width: 58vw;
+  border: none;
+  text-align: left;
+  outline: none;
+  border-radius: 2vw;
+  padding: 1vw 1vw 1vw 2vw;
+}
+
+.readmore:after {
+  content: 'Read more';
+  color: var(--base-textfill);
+  font-size: 1vw;
+  font-weight: bold;
+  float: left;
+  margin: 1vw 0 0 0vw;
+  
+}
+
+.readmore:hover{
+  background-color: var(--base-divbg);
+  transition: all 0.2s;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.activeread:after {
+  content: "Read less";
+}
+
+.content {
+  padding: 0 1cap;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--base-bgfill);
+}

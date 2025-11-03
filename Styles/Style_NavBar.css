@@ -48,6 +48,7 @@ li a, .dropbtn {
   color: var(--base-textnavfill); 
   margin-left: 0.1vw;
   text-decoration: none;
+  transition: all 0.2s;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -61,6 +62,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 li.dropdown {
   display: inline-block;
+  transition: all 0.2s;
 }
 
 .spacer{
@@ -78,6 +80,7 @@ li.dropdown {
   commented out on account of shade colour doing goofy things
   */
   z-index: 1;
+  transition: all 0.2s;
 }
 
 .dropdown-content a {
@@ -86,6 +89,7 @@ li.dropdown {
   text-decoration: none;
   display: block;
   text-align: left;
+  transition: all 0.2s;
 }
 
 .dropdown-content a:hover {
@@ -95,6 +99,7 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transition: all 0.2s;
 }
 
 
