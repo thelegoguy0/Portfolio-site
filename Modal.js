@@ -52,7 +52,7 @@ btn6.onclick = function () {
 // When the user clicks on <span> (x), close the modal
 
 span.onclick = function () {
-    enableScrolling();
+    /*enableScrolling();*/
     modal1.style.display = "none";
 }
 span2.onclick = function () {
@@ -77,7 +77,7 @@ window.onclick = function (event) {
         || event.target == modal3 || event.target == modal4
         || event.target == modal5 || event.target == modal6
     ) {
-        enableScrolling();
+        /*enableScrolling();*/
         modal1.style.display = "none";
         modal2.style.display = "none";
         modal3.style.display = "none";
@@ -92,10 +92,10 @@ window.onclick = function (event) {
 may disable in future
 */
 function disableScrolling(){
-    
+    /*
     var x=window.scrollX;
     var y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
+    window.onscroll=function(){window.scrollTo(x, y);};*/
     
     /*pageCover.classList.remove("hidden");*/
 }

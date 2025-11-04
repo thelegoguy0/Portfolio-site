@@ -35,7 +35,7 @@
   padding: 0;
   border-radius: 1.5vw;
   background-color: var(--base-acctcol);
-  -webkit-text-fill-color: var(--base-textfill);
+  -webkit-text-fill-color: var(--base-acctcol);
   position: absolute;
   float: right;
   right: 5vw;
@@ -137,7 +137,7 @@ width: 10%;
 
 .hexpath text {
   font-size: calc(0.6em + 0.1vmax);
-  fill: var(--base-textfill); 
+  fill: var(--base-acctcol); 
   text-anchor: middle;
   x: 55;
   y: 55;
@@ -156,6 +156,7 @@ width: 10%;
 
 .hexsvg a{
   transition: all 0.2s;
+  fill:var(--base-divbg);
 }
 
 .hexsvg a:hover{

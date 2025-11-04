@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <title>Luke Smit - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,18 @@
   <link rel="stylesheet" href="Styles/Styles_Carousel.css">
   <link rel="stylesheet" href="Styles/Style_NavBar.css">
 
-  
-<style> 
+
+  <style>
 
 
-</style>
+  </style>
 </head>
 
 <script>
 
-/* include function from
-https://www.w3schools.com/howto/howto_html_include.asp
-*/
+  /* include function from
+  https://www.w3schools.com/howto/howto_html_include.asp
+  */
 
   function includeHTML() {
     var z, i, elmnt, file, xhttp;
@@ -33,15 +34,15 @@ https://www.w3schools.com/howto/howto_html_include.asp
       if (file) {
         /*make an HTTP request using the attribute value as the file name:*/
         xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
+        xhttp.onreadystatechange = function () {
           if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
             /*remove the attribute, and call this function once more:*/
             elmnt.removeAttribute("w3-include-html");
             includeHTML();
           }
-        }      
+        }
         xhttp.open("GET", file, true);
         xhttp.send();
         /*exit the function:*/
@@ -49,90 +50,100 @@ https://www.w3schools.com/howto/howto_html_include.asp
       }
     }
   };
-  </script>
-
-<body>
-  <div w3-include-html="NavBar.html"></div> 
-
-  <script>
-  includeHTML();
-
 </script>
 
-<button id="theme-switch">
-        <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-</button>
+<body>
+  <div w3-include-html="NavBar.html"></div>
+
+  <script>
+    includeHTML();
+
+  </script>
+
+  <button id="theme-switch">
+    <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3">
+      <path
+        d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3">
+      <path
+        d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+    </svg>
+  </button>
 
 
-<div class="bgtest">
-<h1 class="h1index">Hi, I'm Luke!</h1>
+  <div class="bgtest">
+    <h1 class="h1index">Hi, I'm Luke!</h1>
 
-<h1 class="h1index h1carousel">I am a
-  <span class="carousel">
-    <div class="carousel-wrapper">
-      <span class="carousel-item des"><a style="color: #256EAF;" href="Projects.html">Designer</a></span>
-      <span class="carousel-item red"><a style="color: #DD4B25;" href="/Projects/FBP.html">Researcher</a></span>
-      <span class="carousel-item stu"><a style="color: #E8D44D;" href="development.html">Student</a></span>
-      <span class="carousel-item des">Designer</span>
-    </div> 
-  </span
->, focused on <br>
-  <span class="carousel2">
-    <div class="carousel2-wrapper">
-      <span class="carousel2-item design"> Designing for neurodiverse empowerment </span>
-      <span class="carousel2-item design2"> Designing with physical-digital tools</span>
-      <span class="carousel2-item research"> Exploring strengths in neurodiversity</span>
-      <span class="carousel2-item research2"> Ethics behind research </span>
-      <span class="carousel2-item future"> Developing skills to improve my design </span>
-      <span class="carousel2-item future2"> Learning good research practice </span>
-      <span class="carousel2-item design"> Designing for neurodiverse empowerment </span>
+    <h1 class="h1index h1carousel">I am a
+      <span class="carousel">
+        <div class="carousel-wrapper">
+          <span class="carousel-item des"><a style="color: #256EAF;" href="Projects.html">Designer</a></span>
+          <span class="carousel-item red"><a style="color: #DD4B25;" href="/Projects/FBP.html">Researcher</a></span>
+          <span class="carousel-item stu"><a style="color: #E8D44D;" href="development.html">Student</a></span>
+          <span class="carousel-item des">Designer</span>
+        </div>
+      </span>, focused on <br>
+      <span class="carousel2">
+        <div class="carousel2-wrapper">
+          <span class="carousel2-item design"> Designing for neurodiverse empowerment </span>
+          <span class="carousel2-item design2"> Designing with physical-digital tools</span>
+          <span class="carousel2-item research"> Exploring strengths in neurodiversity</span>
+          <span class="carousel2-item research2"> Ethics behind research </span>
+          <span class="carousel2-item future"> Developing skills to improve my design </span>
+          <span class="carousel2-item future2"> Learning good research practice </span>
+          <span class="carousel2-item design"> Designing for neurodiverse empowerment </span>
 
-</h1> 
+    </h1>
 
 
-<hr>
+    <hr>
 
-</div>
+  </div>
 
-<div class="emptybgdiv">
-<div class="flatbgdiv">
-  <h2 class="flatbgh">
-    <a href="Projects.html">Projects</a>
-  </h2>
-  <p class="flatbgsubh">
-    That I have worked on
-  </p> 
-  <div class="imgdiv clearfix">
-  <a href="/Projects/Digital_Craft.html" class=flatbgimg1><img class="imgdivitem" src="https://drive.google.com/thumbnail?id=1hwMo510gzykHABRuv7Y_5NRWhgejlrOj&sz=w1000" 
-    ><div class="overlay">
-          <h2>Digital <br>Craftmanship</h2>
-        </div></a>
-    <div class="flatbgimgpush"></div>
-  <a href="/Projects/FBP.html" class=flatbgimg1><img class="imgdivitem" src="https://drive.google.com/thumbnail?id=1rw19MC6cUCoPUci3AoBmVfR8POeK__1D&sz=w1000" 
-    ><div class="overlay">
-          <h2>Final <br>Bachelor <br>Project</h2>
-        </div></a>
-    <div class="flatbgimgpush"></div>
-  <a href="/Projects/Internship.html" class=flatbgimg1><img class="imgdivitem" src="https://drive.google.com/thumbnail?id=1ALtkb9XTMF5rZiDSlJbrs-daLNeX08El&sz=w1000" 
-    ><div class="overlay">
-          <h2>Mindpact <br>Internship </h2>
-        </div></a>
-  
-    <p class="flatbgbuttonp">
-    <a class="flatbgp" href="Projects.html">See more projects!</a>
-  </p>
-  
-</div>
-</div>
-</div>
+  <div class="emptybgdiv">
+    <div class="flatbgdiv">
+      <h2 class="flatbgh">
+        <a href="Projects.html">Projects</a>
+      </h2>
+      <p class="flatbgsubh">
+        That I have worked on
+      </p>
+      <div class="imgdiv clearfix">
+        <a href="/Projects/Digital_Craft.html" class=flatbgimg1><img class="imgdivitem"
+            src="https://drive.google.com/thumbnail?id=1hwMo510gzykHABRuv7Y_5NRWhgejlrOj&sz=w1000">
+          <div class="overlay">
+            <h2>Digital <br>Craftmanship</h2>
+          </div>
+        </a>
+        <div class="flatbgimgpush"></div>
+        <a href="/Projects/FBP.html" class=flatbgimg1><img class="imgdivitem"
+            src="https://drive.google.com/thumbnail?id=1rw19MC6cUCoPUci3AoBmVfR8POeK__1D&sz=w1000">
+          <div class="overlay">
+            <h2>Final <br>Bachelor <br>Project</h2>
+          </div>
+        </a>
+        <div class="flatbgimgpush"></div>
+        <a href="/Projects/Internship.html" class=flatbgimg1><img class="imgdivitem"
+            src="https://drive.google.com/thumbnail?id=1ALtkb9XTMF5rZiDSlJbrs-daLNeX08El&sz=w1000">
+          <div class="overlay">
+            <h2>Mindpact <br>Internship </h2>
+          </div>
+        </a>
+      </div>
+      <p class="flatbgbuttonp">
+        <a class="flatbgp" href="Projects.html">See more projects!</a>
+      </p>
+    </div>
+  </div>
   <!--
   <p class="flatbgp">
     Go time?
   </p>
   -->
-  
-  <div w3-include-html="SubBar.html"></div> 
+
+  <div w3-include-html="SubBar.html"></div>
   <script type="text/javascript" src="lightmode.js" defer></script>
 </body>
+
 </html>

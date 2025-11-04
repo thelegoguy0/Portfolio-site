@@ -52,7 +52,7 @@
   position: relative;
   max-width: 80vw;
   margin: 0vw auto 0;
-  padding: 0;
+  padding: 0 0 1vw;
   background-color: var(--base-divbg);
   /*min-height: 800px;
   /*background-size: 90% auto;*/
@@ -155,7 +155,7 @@
 }
 
 .flatbgp {
-  margin: 0;
+  margin: 3vw auto;
   padding: 1vw 2vw;
   border-radius: 1.5vw;
   background-color: var(--base-acctshad);
@@ -166,6 +166,8 @@
   /*margin:  0px 0px 0px;
   padding: 0px 0px 20px 0px;
   */
+  max-width: 30vw;
+  margin: 2vw auto 1vw;
   text-align: center;
   background-color: var(--base-divbg);
   font-weight: 700;
