@@ -63,6 +63,10 @@
 
 }
 
+a {
+  color: var(--base-textfill);
+}
+
 body {
   min-height: 100%;
   margin: 0;
