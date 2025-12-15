@@ -119,7 +119,7 @@
 
 
 @keyframes carousel {
-    0% {top: calc(-0em + var(--carousel-top));} /* H1 N1 */
+    0% {top: calc(var(--carousel-top));} /* H1 N1 */
     10% {top: calc(-0em + var(--carousel-top));} /* H1 N1 */
     26% {top: calc(-0em + var(--carousel-top));} /* H1 N1 */
     32% {top: calc(-1em + -20px + var(--carousel-top));} /* H1 N2 */
@@ -131,7 +131,7 @@
   }
 
 @keyframes carousel2 {
-      0% {top: calc(-0em + var(--carousel2-top));} /* H1 N1.1 */
+      0% {top: calc(var(--carousel2-top));} /* H1 N1.1 */
       10% {top: calc(-0em + var(--carousel2-top));} /* H1 N1.1 */
       16% {top: calc(-1em + -20px + var(--carousel2-top));} /* H1 N1.2 */
       26% {top: calc(-1em + -20px + var(--carousel2-top));} /* H1 N1.2 */

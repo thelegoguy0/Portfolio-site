@@ -78,6 +78,16 @@ p {
   font-size: calc(0.6em + 1vmax);
 }
 
+h5 {  /*works like a p2*/
+  margin: 25px;
+  color: #000000;
+  -webkit-text-fill-color: var(--base-textfill);
+  -webkit-text-stroke-color: var(--base-textstroke);
+  font-size: calc(0.5em + 0.7vmax);
+  font-weight: normal;
+}
+
+
 h1 {
   margin: 50px;
   color: rgb(0, 0, 0);
@@ -93,6 +103,15 @@ h2 {
   -webkit-text-fill-color: var(--base-textfill);
   -webkit-text-stroke-color: var(--base-textstroke);
   font-size: calc(10px + 2vw);
+
+}
+
+h3 {
+  margin: 30px 0 0;
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: var(--base-textfill);
+  -webkit-text-stroke-color: var(--base-textstroke);
+  font-size: calc(5px + 1.5vw);
 
 }
 

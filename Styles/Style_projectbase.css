@@ -27,9 +27,8 @@
 .ProjBody{
   margin: 3vw 0 0;
   display: flex;
-  
+  width: 98.5vw;
 }
-
 
 .ProjBody h2{
   margin: 0vw 2.5vw;
@@ -39,22 +38,42 @@
   margin: 0vw 3vw 0 5vw;
 }
 
-.ProjInfoTab{
-  padding: 1.5vw 1vw;   
+.ProjBody img{
+  padding: 0;  
+  margin: 1vw 1vw 1vw 2vw;
+  position: relative;
+  max-height: 40vw;
+  border-radius: 1.3vw;
+  text-align: right;
+}
+
+.BodyImgDiv{
   margin-left: auto;
-  width: 30vw;
-  max-height: 20vw;
+  text-align: right;
+  float: right;
+}
+
+.ProjInfoTab{
+  padding: 0 1vw;   
+  margin-left: auto;
+  width: 35vw;
+  max-height: 30vw;
   background-color: var(--base-divbg);
   border-radius: 2vw 0.5vw 0.5vw 2vw;
 }
 
+.ProjInfoTab h2{
+  font-size: calc(1em + 0.5vmax);
+}
+
 .ProjExtTab{
-  padding: 1.5vw 1vw;   
+  padding: 1vw 0vw 1vw 1vw;
   margin: 2vw 10vw;
   max-width: 78vw;
-  max-height: 20vw;
+  max-height: 40vw;
   background-color: var(--base-divbg);
   border-radius: 2vw;
+  border-left: 0.5vw solid var(--base-acctcol);
 }
 
 .ProjExtTab h2{
@@ -63,25 +82,7 @@
 
 .ProjExtTab p{
   font-size: calc(0.6em + 0.8vmax);
-}
-
-.ProjBody img{
-  padding: 0;  
-  margin: 1vw 1vw 1vw 2vw;
-  position: relative;
-  max-height: 40vw;
-  border-radius: 1.3vw;
-  float: right;
-}
-
-.flatbgdiv {
-  position: relative;
-  max-width: 1243px;
-  margin: 5vw auto 0px;
-  padding: 0;
-  background-color: var(--base-divbg);
-  /*min-height: 800px;
-  /*background-size: 90% auto;*/
+  
 }
 
 .clearfix::after {
@@ -90,65 +91,78 @@
   display: table;
 }
 
-.flatbgimg1 {
-  position: relative;
-  width: 20vw;
-  height: 30vw;
-  margin: 1vw 3vw;
-  padding: 0px 0px 40px 0px;
-}
-.flatbgimg2 {
-  position: relative;
-  width: 20vw;
-  height: 20vw;
-  top:10px;
-  right:0px;
-  bottom:5px;
-  left:5%;
 
-  margin: 0px 0px 0px 30px;
-  padding: 0px 0px 40px 40px;
-  background-color: var(--base-divbg);
-}
-.flatbgimg3 {
-  position: relative;
-  width: 20vw;
-  height: 30vw;
-  top:10px;
-  right:0px;
-  bottom:5px;
-  left:5%;
-
-  margin: 0px 40px 180px 0px;
-  padding: 0px 0px 40px 80px;
-  background-color: var(--base-divbg);
+/* Collapsible Style */
+.collapsible {
+  background-color: var(--base-bgdiv);
+  cursor: pointer;
+  padding: 1vw 0vw 1vw 1vw;
+  max-width: 30vw;
+  height: 3vw;
+  border: none;
+  text-align: left;
+  outline: none;
 }
 
-.flatbgh {
-  text-align: center;
-  margin: 5vw 0px 0px 0px;
-  padding: 40px 0px 0px 0px;
-  background-color: var(--base-divbg);
+.collapsible:after {
+  content: '\002B';
+  color: var(--base-textfill);
+  font-size: 3vw;
   font-weight: bold;
+  float: right;
+  margin: -5vw 1vw 2vw 3vw;
 }
 
-.flatbgsubh {
-  -webkit-text-fill-color:var(--base-textsubfill);
-  text-align: center;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  background-color: var(--base-divbg);
+.collapsible:hover{
+  background-color: var(--base-acctcol);
+  transition: all 0.2s;
 }
 
-.flatbgp {
-  margin: 100px 0px 0px 0px;
-  padding: 0px 0px 20px 80px;
+
+.readmore {
+  /*padding: 1vw 1vw 1vw 2vw;
+  margin: 1vw 0 0 -1.5vw;*/
+  padding: 0;
+  width: 78vw;
+  max-height: 50vw;
   background-color: var(--base-divbg);
+  border-radius: 2vw;
+  cursor: pointer;
+  outline: none;
+  border-style: none;
+  text-align: left;
+  transition: all 0.2s;
 }
 
-.flatbgbuttonp {
-  margin: -120px 0px 0px 0px;
-  padding: 0px 0px 20px 38%;
+.readmore:after {
+  text-decoration: underline;
+  content: 'Show more';
+  color: var(--base-textfill);
+  font-size: 1.2vw;
+  font-weight: bold;
+  float: left;
+  margin: -1vw 0 0 2vw;
+  
+}
+
+.readmore:hover{
+  background-color: var(--base-acctshad);
+  transition: all 0.2s;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.activeread:after {
+  text-decoration: underline;
+  content: "Show less";
+}
+
+.content {
+  padding: 0 1cap;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
   background-color: var(--base-divbg);
-  font-weight: 700;
 }

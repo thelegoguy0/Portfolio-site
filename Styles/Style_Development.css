@@ -23,7 +23,10 @@
 
 .textdivsplit-L p {
   margin: 0.5vw 0 0;
-  font-size: calc(0.5em + 0.7vmax);
+}
+
+.textdivsplit-L h5 {
+  margin: 0.5vw 0 0;
 }
 
 .textdivsplit-R {
@@ -37,12 +40,19 @@
 
 .textdivsplit-R p {
   margin: 0.5vw 0 0;
-  font-size: calc(0.5em + 0.7vmax);
+}
+
+.textdivsplit-R h5 {
+  margin: 0.5vw 0 0;
 }
 
 .refs {
   margin: 0.5vw 5vw 0;
-  font-size: calc(0.5em + 0.7vmax);
+  font-size: calc(0.5em + 0.6vmax);
+}
+
+.reft span{
+  text-indent: -1em;
 }
 
 .headbr {
@@ -102,13 +112,15 @@ https://www.w3schools.com/howto/howto_js_collapsible.asp
   cursor: pointer;
   width: 58vw;
   border: none;
+  border-left: 0.5vw solid var(--base-acctcol);
   text-align: left;
   outline: none;
-  border-radius: 2vw;
+  border-radius: 2vw;   /*0 2vw 2vw 0;*/
   padding: 1vw 1vw 1vw 2vw;
 }
 
 .readmore:after {
+  text-decoration: underline;
   content: 'Read more';
   color: var(--base-textfill);
   font-size: 1vw;
@@ -127,7 +139,12 @@ https://www.w3schools.com/howto/howto_js_collapsible.asp
   content: "\2212";
 }
 
+.activeread{
+  border-radius: 2vw 2vw 0 0;
+}
+
 .activeread:after {
+  text-decoration: underline;
   content: "Read less";
 }
 
