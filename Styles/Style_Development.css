@@ -98,7 +98,7 @@ https://www.w3schools.com/howto/howto_js_collapsible.asp
   font-size: 3vw;
   font-weight: bold;
   float: right;
-  margin: -6vw 3vw 2vw 6vw;
+  margin: -5vw 3vw 2vw 6vw;
 }
 
 .collapsible:hover{
@@ -133,6 +133,10 @@ https://www.w3schools.com/howto/howto_js_collapsible.asp
 .readmore:hover{
   background-color: var(--base-divbg);
   transition: all 0.2s;
+}
+
+.active{
+  border-radius: 2vw 2vw 0 0;
 }
 
 .active:after {

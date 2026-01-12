@@ -18,6 +18,7 @@
   --base-acctcol: #256EAF;
   --base-acctcolopac: #256EAFB3;
   --base-acctshad: #284866;
+  --base-acctshadopac: #284866B3;
   /* prev #23394d*/
   --base-toolbg: #555;
 
@@ -30,8 +31,8 @@
 .lightmode {
   transition: all 0.2s;
   --base-textfill: #000000;
-  --base-textofffill: #1a1a1a;
-  --base-textsubfill: #4e4e4e;
+  --base-textofffill: #111111;
+  --base-textsubfill: #353535;
   --base-textnavfill: #191919;
   --base-textstroke: rgb(14, 13, 13);
   --base-bgfill: #d1dde0;
@@ -42,7 +43,8 @@
   --base-primcol: ;
   --base-acctcol: #5a90c2;
   --base-acctcolopac: #5a90c2b3;
-  --base-acctshad: #7aa5cd; 
+  --base-acctshad: #7aa5cd;
+  --base-acctshadopac: #7aa5cdb3;  
   /* prev #256EAF */
   --base-toolbg: #555;
 

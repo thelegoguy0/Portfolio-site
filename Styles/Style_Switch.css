@@ -1,0 +1,88 @@
+ 
+ /* From; https://www.w3schools.com/howto/howto_css_switch.asp */
+ 
+ /* The switch - the box around the slider */
+
+.FBPalign {
+    position-anchor: --Anchor1;
+    position-area: center right;
+    position: absolute !important;
+    left: auto;
+    right: 3vw;
+    margin: 1.5vw 0;
+}
+
+
+#FBPhideS1head {
+    display: none;
+}
+#FBPhideS1body {
+    display: none;
+}
+/*
+.FBPhideS2 {
+    display: inherit !important;
+}
+*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 6vw;
+  height: 3.4vw;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.6vw;
+  width: 2.6vw;
+  left: 0.4vw;
+  bottom: 0.4vw;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--base-acctcol);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 0.1vw var(--base-acctcol);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(2.6vw);
+  -ms-transform: translateX(2.6vw);
+  transform: translateX(2.6vw);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 3.4vw;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 

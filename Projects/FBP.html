@@ -6,6 +6,7 @@
   <title>Luke Smit - Portfolio FBP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../Styles/Style_base.css">
+  <link rel="stylesheet" href="../Styles/Style_Switch.css">
   <link rel="stylesheet" href="../Styles/Style_projectbase.css">
   <link rel="stylesheet" href="../Styles/Style_NavBar.css">
   <style>
@@ -88,57 +89,73 @@
         2025-2026, Semester A
       </p>
     </div>
--->
+--><label class="switch FBPalign">
+      <input type="checkbox" checked>
+      <!-- temp removed:     onclick="updateShow()"  -->
+      <span class="slider round"></span>
+    </label>
+
     <div class="ProjInfoTab">
+
       <p>
-        Final deadline: January 14<span class="suptext">th</span>, 2025<br>
-        <!--
+        <span id="FBPhideS1head">
+          Final deadline: June 26<span class="suptext">th</span>, 2025<br>
+          2024-2025, Semester B
+        </span>
+
+        <span id="FBPhideS2head">
+          Final deadline: January 19<span class="suptext">th</span>, 2026<br>
+          2025-2026, Semester A
+        </span>
+      </p>
+
+
+      <!--
       <br><br>
       T&R, U&S, C&A, MD&C, B&E, DRP, PS
     -->
-        2024-2025, Semester B <br>
-        2025-2026, Semester A
-      </p>
+      <!-- Rounded switch -->
+
     </div>
 
 
   </section>
+  <div id="FBPhideS1body">
+    <section class="ProjBody clearfix">
+      <div>
+        <h2>
+          Abstract;
+        </h2>
+        <p>
+          Neurodivergent individuals – individuals with Autism,
+          Attention Deficit Disorder (ADD)/ Attention Deficit
+          Hyperactivity Disorder (ADHD), Dyslexia, etc – tend to
+          be inhibited in their self-regulation skills. This means
+          that, in a study setting, neurodivergent students may have
+          a difficult time getting started with work, or suffer
+          increased consequences from losing focus.<br><br>
+          As a project, Neurodiversity in Focus explores the
+          experience of focus and self-motivation of neurodiverse
+          students while studying and working. Through user
+          studies, namely a survey and design probe (diary study),
+          common struggles and challenges are identified. The data
+          from these studies provided a research basis for design
+          iterations. These iterations led to the concept of Mind
+          Clouds; a tool for neurodiverse students to improve
+          awareness of distracting factors in their environment.
+          Mind Clouds encourages users to gain initial task insight
+          by pushing them to write down specific tasks, whilst also
+          providing insight into distractions, recorded by spinning
+          and pressing the tool.
+        </p>
+      </div>
+      <div>
+        <img src="https://drive.google.com/thumbnail?id=1rw19MC6cUCoPUci3AoBmVfR8POeK__1D&sz=w1000"> </img>
+      </div>
 
-  <section class="ProjBody clearfix">
-    <div>
-      <h2>
-        Abstract;
-      </h2>
-      <p>
-        Neurodivergent individuals – individuals with Autism,
-        Attention Deficit Disorder (ADD)/ Attention Deficit
-        Hyperactivity Disorder (ADHD), Dyslexia, etc – tend to
-        be inhibited in their self-regulation skills. This means
-        that, in a study setting, neurodivergent students may have
-        a difficult time getting started with work, or suffer
-        increased consequences from losing focus.<br><br>
-        As a project, Neurodiversity in Focus explores the
-        experience of focus and self-motivation of neurodiverse
-        students while studying and working. Through user
-        studies, namely a survey and design probe (diary study),
-        common struggles and challenges are identified. The data
-        from these studies provided a research basis for design
-        iterations. These iterations led to the concept of Mind
-        Clouds; a tool for neurodiverse students to improve
-        awareness of distracting factors in their environment.
-        Mind Clouds encourages users to gain initial task insight
-        by pushing them to write down specific tasks, whilst also
-        providing insight into distractions, recorded by spinning
-        and pressing the tool.
-      </p>
-    </div>
-    <div>
-      <img src="https://drive.google.com/thumbnail?id=1rw19MC6cUCoPUci3AoBmVfR8POeK__1D&sz=w1000"> </img>
-    </div>
+    </section>
 
-  </section>
-
-  <!--  More button shenanigans
+    <!--  More button shenanigans
   <div class="ProjExtTab">
     <button class="readmore">
       <h2>
@@ -157,7 +174,7 @@
   </div>
 -->
 
-  <div class="ProjExtTab">
+    <div class="ProjExtTab">
       <h2>
         Project information
       </h2>
@@ -166,13 +183,77 @@
         <br>Luke
         <br><b>Coach</b>
         <br>S., Lucas
-      <br>T&R, U&S, C&A, MD&C, B&E, DRP, PS
+        <br>T&R, U&S, C&A, MD&C, B&E, DRP, PS
+      </p>
+    </div>
+  </div>
+
+  <div id="FBPhideS2body">
+    <section class="ProjBody clearfix">
+      <div>
+        <h2>
+          Abstract;
+        </h2>
+        <p>
+          Neurodivergent individuals – individuals with Autism,
+          Attention Deficit Disorder (ADD)/ Attention Deficit
+          Hyperactivity Disorder (ADHD), Dyslexia, etc – tend to
+          be inhibited in their self-regulation skills. This means that,
+          in a study setting, neurodivergent students may have a
+          difficult time getting started with work, or suffer increased
+          consequences from losing focus.<br><br>
+          As a project, Neurodiversity in Focus explores the
+          experience of focus, self-motivation, and distraction of
+          neurodiverse students while studying and working.
+          Through user studies, namely interviews and interaction
+          tests, physical interactions were tested and focus
+          challenges identified.
+        </p>
+      </div>
+      <div>
+        <img src="https://drive.google.com/thumbnail?id=1gwCVi9DYfPyF7w1ERp2-lklV9qT6h8Al&sz=w1000"> </img>
+      </div>
+
+    </section>
+
+    <!--  More button shenanigans
+  <div class="ProjExtTab">
+    <button class="readmore">
+      <h2>
+        Project information
+      </h2>
+      <p>
+        <b>Students;</b>
+        <br>Luke
+        <br><b>Coach</b>
+        <br>S., Lucas
+      </p>
+    </button>
+    <p class="content">
+      T&R, U&S, C&A, MD&C, B&E, DRP, PS
     </p>
+  </div>
+-->
+
+    <div class="ProjExtTab">
+      <h2>
+        Project information
+      </h2>
+      <p>
+        <b>Students;</b>
+        <br>Luke
+        <br><b>Coach</b>
+        <br>S., Lucas
+        <br>T&R, U&S, C&A, MD&C, B&E, DRP, PS
+      </p>
+    </div>
   </div>
 
   <div w3-include-html="/SubBar.html"></div>
   <script type="text/javascript" src="/lightmode.js" defer></script>
   <!--<script src="/Collapse.js"></script>-->
+  <script src="/Switch.js"></script>
+
 
 </body>
 

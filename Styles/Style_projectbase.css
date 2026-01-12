@@ -19,6 +19,7 @@
 }
 
 .ProjHeader{
+  overflow: hidden !important;
   margin: 6vw 0 0;
   display: flex;
   align-items: center;
@@ -54,8 +55,11 @@
 }
 
 .ProjInfoTab{
+  anchor-name: --Anchor1;
+  overflow: hidden;
   padding: 0 1vw;   
   margin-left: auto;
+  margin-right: -1vw;
   width: 35vw;
   max-height: 30vw;
   background-color: var(--base-divbg);
