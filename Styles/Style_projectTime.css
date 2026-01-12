@@ -64,6 +64,7 @@ Idea is to create left-right 'steps' of projects
 }
 
 .p2text {
+    text-align: left;
     font-size: calc(0.6em + 1.6vmax);
     margin: 1.7vw 1vw;
 }
@@ -90,6 +91,7 @@ Wanted to try make these flexboxes but that did not work out
     max-width: 20vw;
     height: 25vw;
     border-radius: 1.7vw;
+    overflow: hidden;
 }
 
 .imgdivitem {
@@ -99,7 +101,7 @@ Wanted to try make these flexboxes but that did not work out
     margin: 0;
     margin-left: 1vw;
     margin-bottom: 2vw;
-    ;
+    
     padding: 0
         /*1vw 1.5vw 2vw*/
     ;
@@ -153,6 +155,13 @@ Wanted to try make these flexboxes but that did not work out
     opacity: 1;
 }
 
+
+
+.imgdivitem:hover .readmore {
+    height: 100%;
+    opacity: 1;
+}
+
 .imgdivitem:hover .overlay2 {
     height: 1.5vw;
     opacity: 1;
@@ -160,4 +169,60 @@ Wanted to try make these flexboxes but that did not work out
 
 .imgdivpush {
     margin: 0 1vw;
+}
+
+
+
+
+
+/*
+Collapsible time
+*/
+/*
+
+
+.readmore {
+  padding:0 !important;
+  background-color: var(--base-acctcolopac);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-left: 0 solid var(--base-acctcol);
+  text-align: left;
+  outline: none;
+  border-radius: 0 0 1.7vw 1.7vw;
+  transition: all 0.2s;
+}
+
+.readmore:after {
+  /*text-decoration: underline;
+  /*content: 'Read more';
+  color: var(--base-textfill);
+  /*font-size: 1vw;
+  font-weight: bold;
+  float: left;
+  margin: -7vw 0 0 0vw;
+  
+}
+
+.readmore:hover{
+  background-color: var(--base-acctshadopac);
+  transition: all 0.2s;
+}
+
+.activeread{
+  border-radius: 2vw 2vw 0 0;
+}
+
+.activeread:after {
+  text-decoration: underline;
+  content: "Read less";
+}
+
+.content {
+  padding: 0 1cap;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--base-bgfill);
 }
