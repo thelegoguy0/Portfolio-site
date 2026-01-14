@@ -222,8 +222,10 @@ Wanted to try make these flexboxes but that did not work out
   margin: 1vw 0 1vw 2vw;
   font-size: calc(0.5em + 0.5vmax);
   -webkit-text-fill-color:  var(--base-textsubfill);
+  color: var(--base-textsubfill);
   float: left;
 }
+
 
 .aptags{
   position: relative;
@@ -231,6 +233,7 @@ Wanted to try make these flexboxes but that did not work out
   margin: 1vw 0 1vw 2vw;
   font-size: calc(0.5em + 0.5vmax);
   -webkit-text-fill-color:  var(--base-textofffill);
+  color: var(--base-textofffill);
   float: left;
 }
 
@@ -240,6 +243,7 @@ Wanted to try make these flexboxes but that did not work out
   background-color: var(--base-toolbg);
   -webkit-text-fill-color:  var(--base-textofffill);
   text-align: center;
+  align-items: center;
   border-radius: 0.5vw;
   padding: 0.4vw 0.5vw;
   position: absolute;

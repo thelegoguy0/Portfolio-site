@@ -84,6 +84,10 @@ p {
   font-size: calc(0.6em + 1vmax);
 }
 
+p a{
+  color: var(--base-textsubfill);
+}
+
 h5 {  /*works like a p2*/
   margin: 25px;
   color: #000000;
