@@ -336,7 +336,7 @@ https://blog.hubspot.com/website/css-fade-in
 }
 
 
-
+/*
 .tag{
   opacity: 0;
   transform: translate(10vh, 0);
@@ -357,7 +357,7 @@ https://blog.hubspot.com/website/css-fade-in
 .tag-R.visible{
   opacity: 1;
   transform: translate(0, 0);
-}
+}*/
 
 /*
 code to disable for saving to pdf
