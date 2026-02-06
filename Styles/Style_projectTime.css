@@ -47,7 +47,6 @@ Idea is to create left-right 'steps' of projects
     margin-left: 8vw;
     margin-bottom: 0;
     margin-top: 0;
-    -webkit-text-fill-color: var(--base-textsubfill);
 }
 
 .h2proj {
@@ -132,6 +131,13 @@ Wanted to try make these flexboxes but that did not work out
     overflow: hidden;
 }
 
+.imgdivhead {
+    margin: 0 0 0 0vw;
+    position: relative;
+    max-width: 8vw;
+    -webkit-text-fill-color: var(--base-textsubfill);
+}
+
 .imgdivitem {
     position: relative;
     max-width: 20vw;
@@ -206,7 +212,7 @@ Wanted to try make these flexboxes but that did not work out
 }
 
 .imgdivpush {
-    margin: 0 1vw;
+    margin: 0.5vw;
 }
 
 

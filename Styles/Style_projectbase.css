@@ -96,6 +96,14 @@
 }
 
 
+.embed{
+  margin: 1vw;
+  margin-left: 10vw;
+  width: 53vw;
+  height: 30vw;
+}
+
+
 /* Collapsible Style */
 .collapsible {
   background-color: var(--base-bgdiv);
