@@ -129,6 +129,8 @@ Wanted to try make these flexboxes but that did not work out
     height: 25vw;
     border-radius: 1.7vw;
     overflow: hidden;
+    transition: all 0.3s;
+
 }
 
 .imgdivhead {
@@ -156,6 +158,17 @@ Wanted to try make these flexboxes but that did not work out
 .imgdivitem:hover {
     transform: scale(1.05);
     transition: all 0.3s;
+}
+
+.imgdivitem:hover .imgdivimg {
+    border-radius: 2.4vw;
+    transition: all 0.3s;
+
+}
+
+.imgdivitem:hover .overlay {
+    border-radius: 0 0 2.4vw 2.4vw;
+    transition: all 0.3s;   
 }
 
 .overlay {
