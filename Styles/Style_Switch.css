@@ -12,6 +12,22 @@
     margin: 1.5vw 0;
 }
 
+.AoEalign {
+    position-anchor: --Anchor1;
+    position-area: center right;
+    position: absolute !important;
+    left: auto;
+    right: 12vw;
+    margin: 3vw 0;
+}
+
+.Warn {
+  background-color: red;
+  margin: 0;
+  padding: 35px;
+  padding-right: 25vw;
+  max-width: 100%;
+}
 
 #FBPhideS1head {
     display: none;
