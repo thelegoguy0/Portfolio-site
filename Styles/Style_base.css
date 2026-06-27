@@ -180,6 +180,10 @@ img{
   justify-content: center;
 }
 
+.textBody {
+margin: 0 3vw;
+}
+
 
 #theme-switch {
   height: 3vw;

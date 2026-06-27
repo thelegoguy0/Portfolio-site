@@ -24,7 +24,7 @@
     -webkit-text-fill-color: var(--base-textsubfill);
 }
 
-.psub2 a{
+.psub2 a {
     color: var(--base-textsubfill);
 }
 
@@ -34,7 +34,7 @@
     -webkit-text-fill-color: var(--base-textsubfill);
 }
 
-.psub3 a{
+.psub3 a {
     color: var(--base-textsubfill);
 }
 
@@ -66,9 +66,9 @@ Idea is to create left-right 'steps' of projects
     margin: 0.25vw 14.5vw 0.5vw;
 }
 
-.pSearch a{
+.pSearch a {
     transition: all 0.2s;
-   -webkit-text-fill-color: var(--base-textsubfill); 
+    -webkit-text-fill-color: var(--base-textsubfill);
 }
 
 .pSearch a:hover {
@@ -78,19 +78,19 @@ Idea is to create left-right 'steps' of projects
 }
 
 .p2sub {
-  margin: 0.2vw 0 auto 1vw !important;
-  padding: 0vw;
-  -webkit-text-fill-color: var(--base-textnavfill);
-  font-size: calc(0.6em + 0.5vmax);
+    margin: 0.2vw 0 auto 1vw !important;
+    padding: 0vw;
+    -webkit-text-fill-color: var(--base-textnavfill);
+    font-size: calc(0.6em + 0.5vmax);
 }
 
 .p2subr {
-  text-align: right;
-  width: 100%;
-  margin: 0.2vw 1vw auto -1vw !important;
-  padding: 0vw;
-  -webkit-text-fill-color: var(--base-textnavfill);
-  font-size: calc(0.6em + 0.5vmax);
+    text-align: right;
+    width: 100%;
+    margin: 0.2vw 1vw auto -1vw !important;
+    padding: 0vw;
+    -webkit-text-fill-color: var(--base-textnavfill);
+    font-size: calc(0.6em + 0.5vmax);
 }
 
 .p2text {
@@ -108,6 +108,221 @@ Idea is to create left-right 'steps' of projects
     top: 0;
     z-index: 3;
 }
+
+/*
+Grid Filter CSS
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements
+https://codepen.io/avi98/pen/MoZwJW
+
+*/
+
+.hr_mid {
+    margin-top:0.2vw; 
+    max-width: 30vw; 
+    border-width: 0.1vw;
+}
+
+.show {
+    display: flex !important;
+}
+
+.FiltBy {
+    font-size: calc(0.6em + 0.7vmax);
+    padding: 0.2vw 0;
+    margin: 0;
+    margin-left: 12vw;
+    display: inline-block;
+}
+
+.FiltName {
+    font-size: calc(0.6em + 0.5vmax);
+    background-color: var(--base-textfill);
+}
+
+.FiltName.active {
+    background-color: var(--base-acctshadopac);
+}
+
+.FiltNameYr {
+    font-size: calc(0.6em + 0.5vmax);
+    background-color: var(--base-textfill);
+}
+
+.FiltNameYr.Yractive {
+    background-color: var(--base-acctshadopac);
+}
+
+
+.GridFilt li {
+    display: inline;
+    float: none;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.GridFilt button {
+    display: none;
+}
+
+.GridFilt:not(.-filter-button) li {
+    position: relative;
+}
+
+.GridFilt:not(.-filter-button) li:not(:last-child, :first-child)::after {
+    content: "/";
+    margin: 0 0.5vw 0 0.25vw;
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+    -webkit-text-fill-color: var(--base-textfill);
+}
+
+/*
+.GridFilt:not(.-filter-button) a {
+    margin-right: 0.85vw;
+    font-weight: var(--clb-text-medium);
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+}
+*/
+
+
+.GridList {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: block;
+    background-color: var(--base-bg);
+}
+
+.GridList > li::before {
+    content: "";
+    display: none;
+}
+
+.GridList li {
+
+    align-items: center;
+    vertical-align: middle;
+}
+
+.GridList a {
+    padding: 0.8vw 0vw;;
+}
+
+.GridList p {
+    padding: 0;
+}
+
+.GridList button {
+  font-weight: 700;
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: var(--base-bg);
+  cursor: pointer;
+}
+
+ul.FiltList{
+    padding-left: 10vw;
+    overflow: visible;
+    margin: 1vw 0
+}
+
+/*
+li {
+
+}
+*/
+
+
+li a, .FiltDropBtn {
+  display: inline-block;
+  color: var(--base-textnavfill);
+  text-align: center;
+  padding: calc(1.2vw) calc(2.8vw);
+  color: var(--base-textnavfill); 
+  margin: 0 0.1vw;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+#YearList .FiltDropBtn {
+    min-width: 6.9vw;
+}
+
+#btnList .FiltDropBtn {
+    min-width: 14.9vw;    
+}
+
+li a:hover, .FiltDropdown:hover .FiltDropBtn {
+  
+  background-color: var(--base-acctcol);
+  transition: all 0.2s;
+  /*
+  background-color: red;
+  */
+}
+
+li.FiltDropdown {
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.FiltDropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--base-acctcol);
+  /*padding: 12px;*/ 
+  /*box-shadow: 0px 8px 16px 0px rgba(126, 124, 124, 0.2);
+  commented out on account of shade colour doing goofy things
+  */
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+#YearList .FiltDropdown-content {
+    min-width: 7vw;
+}
+
+
+#btnList .FiltDropdown-content {
+    width: 15vw;    
+}
+
+
+.FiltDropdown-content button {
+  color: var(--base-textnavfill);
+  width: 100%;
+  padding: 0.8vw 1.4vw;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.FiltDropdown-content button:hover {
+  background-color: var(--base-acctshad);
+  transition: all 0.2s;
+}
+
+.FiltDropdown:hover .FiltDropdown-content {
+  display: block;
+  transition: all 0.2s;
+}
+
+
+/*
+.GridFilt {
+    
+}
+*/
+
 
 /*
 Wanted to try make these flexboxes but that did not work out 
@@ -142,17 +357,18 @@ Wanted to try make these flexboxes but that did not work out
 
 .imgdivitem {
     position: relative;
-    max-width: 20vw;
+    width: 19vw;
     height: 25vw;
-    margin: 0;
+    margin: 0 0.5vw;
     margin-left: 1vw;
     margin-bottom: 2vw;
-    
+
     padding: 0
         /*1vw 1.5vw 2vw*/
     ;
     border-radius: 1.7vw;
     transition: all 0.3s;
+    display: none;
 }
 
 .imgdivitem:hover {
@@ -168,7 +384,7 @@ Wanted to try make these flexboxes but that did not work out
 
 .imgdivitem:hover .overlay {
     border-radius: 0 0 2.4vw 2.4vw;
-    transition: all 0.3s;   
+    transition: all 0.3s;
 }
 
 .overlay {
@@ -203,7 +419,7 @@ Wanted to try make these flexboxes but that did not work out
 
 .imgdivitem p {
     position: absolute;
- /*   margin: 1.5vw 1vw;*/
+    /*   margin: 1.5vw 1vw;*/
     z-index: 1;
 }
 
@@ -225,7 +441,7 @@ Wanted to try make these flexboxes but that did not work out
 }
 
 .imgdivpush {
-    margin: 0.5vw;
+    margin: 0;
 }
 
 
@@ -233,7 +449,7 @@ Wanted to try make these flexboxes but that did not work out
 
 
 /*
-Collapsible time
+Collapsible coding time
 */
 /*
 

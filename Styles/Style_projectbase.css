@@ -37,6 +37,7 @@
 
 .ProjBody p{
   margin: 0vw 3vw 0 5vw;
+  max-width: 60vw;
 }
 
 .ProjBody img{
@@ -46,12 +47,14 @@
   max-height: 40vw;
   border-radius: 1.3vw;
   text-align: right;
+  width: 28vw;
 }
 
 .BodyImgDiv{
   margin-left: auto;
   text-align: right;
   float: right;
+  overflow: hidden;
 }
 
 .ProjInfoTab{

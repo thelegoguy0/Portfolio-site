@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Luke Smit - Portfolio Project timeline</title>
+  <link rel="stylesheet" href="Styles/Style_base.css">
+  <link rel="stylesheet" href="Styles/Style_NavBar.css">
+  <link rel="stylesheet" href="Styles/Style_projectTime.css">
+
+  </style>
+</head>
+
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4) {
+            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+</script>
+<script type="text/javascript" src="JQ/jquery-3.7.1.min.js"></script>
+<script src="Scroll.js"></script>
+
+
+<button id="theme-switch">
+  <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3">
+    <path
+      d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" height="2.5vw" viewBox="0 -960 960 960" width="2.5vw" fill="#e3e3e3">
+    <path
+      d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+  </svg>
+</button>
+
+<body>
+
+  <div w3-include-html="NavBar.html"></div>
+
+  <script>
+    includeHTML();
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("light-mode");
+    }    
+  </script>
+
+  <div>
+    <p class="psub">Take a look at this</p>
+    <h1 class="h1proj">Project Overview!</h1>
+    <p class="psub2">Or find my most influential projects <a href="Projects.html">here</a></p>
+    <h5 class="psub3">Basic courses and individual <a href="/Proj_Timeline.html#USE">USE</a> courses are omitted on this page</h5>
+
+    <hr style="margin-bottom:0.25vw;">
+
+    <div class="stick">
+    <p class="pSearch">Quickly go to:&nbsp;&nbsp;
+      <a href="/Proj_Timeline.html#topnavbar">Top</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="/Proj_Timeline.html#2026">2025/2026</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="/Proj_Timeline.html#2025">2024/2025</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="/Proj_Timeline.html#2024">2023/2024</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="/Proj_Timeline.html#2023">2022/2023</a>
+    </p>
+    <hr class="hr">
+</div>
+
+
+    <h2 class="yearHead" id="2026">2025/2026</h2>
+    <div class="imgdiv clearfix">
+              <h2 class="imgdivhead">Sem. B</h2>
+
+      <div class="imgdivitem">
+        <a href="Projects/FBP.html">
+          <img class="imgdivimg" src="">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DPB390</p>
+            <p class="p2subr">Year 4</p>
+
+          </div>
+          <p class="p2text"><b>Final <br>Bachelor <br>Project</b></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="imgdiv clearfix">
+              <h2 class="imgdivhead">Sem. A</h2>
+
+      <div class="imgdivitem">
+        <a href="Projects/FBP.html">
+        
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1gwCVi9DYfPyF7w1ERp2-lklV9qT6h8Al&sz=w1000">
+        </a>
+        <a href="Projects/FBP.html">
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DPB390</p>
+            <p class="p2subr">Year 4</p>
+
+          </div>
+          <p class="p2text"><b>Final <br>Bachelor <br>Project</b></p>
+        </div>
+      </a>
+      </div>
+    </div>
+
+
+    <!--    attempt at making interactive cards did not go well sadly
+    <h2 class="yearHead" id="2026">2025/2026 Sem. A</h2>
+    <div class="imgdiv clearfix">
+      <div class="imgdivitem">
+        <a href="Projects/FBP.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1gwCVi9DYfPyF7w1ERp2-lklV9qT6h8Al&sz=w1000">
+        </a>
+        <div class="overlay"> 
+          <button class="readmore">
+            <div class="overlay2">
+              <p class="p2sub">DPB390</p>
+            </div>
+            <p class="p2text"><b>Final <br>Bachelor <br>Project</b></p>
+          </button>
+          <div class="content">
+            <p>test<br>text<br>paragraph</p>
+          </div>
+       </div>
+       
+      </div>
+      
+    </div>
+
+
+  -->
+
+
+
+    <h2 class="yearHead" id="2025">2024/2025</h2>
+    <div class="imgdiv clearfix">
+        <h2 class="imgdivhead">Sem. B</h2>
+
+      <div class="imgdivitem">
+        <a href="/Projects/FBP.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1rw19MC6cUCoPUci3AoBmVfR8POeK__1D&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DPB390</p>
+            <p class="p2subr">Year 3</p>
+
+          </div>
+          <p class="p2text"><b>Final <br>Bachelor <br>Project</b></p>
+        </div>
+      </div>
+      <div class="imgdivpush"></div>
+      <div class="imgdivitem">
+        <a href="/Projects/DAS.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1gYNIF6yAVt2yM5QxBP5JTi1bUocqQmsA&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DRB170</p>
+            <p class="p2subr">Year 3</p>
+
+          </div>
+          <p class="p2text"><b>Design <br>Actuated <br>Systems</b></p>
+        </div>
+      </div>
+      <div class="imgdivpush"></div>
+      <div class="imgdivitem">
+        <a href="Projects/DIM.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1pBVZDwGjon7EN128O11DiRH1g2L9dlsO&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DAB200</p>
+            <p class="p2subr">Year 3</p>
+
+          </div>
+          <p class="p2text"><b>Design <br>Innovation <br>Methods</b></p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="imgdiv clearfix">
+        <h2 class="imgdivhead">Sem. A</h2>
+
+      <div class="imgdivitem">
+        <a href="/Projects/Internship.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1ALtkb9XTMF5rZiDSlJbrs-daLNeX08El&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DPB310</p>
+            <p class="p2subr">Year 3</p>
+
+          </div>
+          <p class="p2text"><b>Mindpact <br>Internship</b></p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h2 class="yearHead" id="2024">2023/2024</h2>
+    <div class="imgdiv clearfix">
+        <h2 class="imgdivhead">Sem. B</h2>
+      <div class="imgdivitem">
+        <a href="Projects/Project3.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1ybj1uAU1KcA99RGYP5gqSFkgmSVy-mCn&sz=w1000"></a>
+
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DPB220 - Project 3</p>
+            <p class="p2subr">Year 2</p>
+          </div>
+          <p class="p2text"><b>Virtual Reality<br>as tool for <br>Stress Relief</b></p>
+        </div>
+      </div>
+      <div class="imgdivpush"></div>
+      <div class="imgdivitem">
+        <a href="/Projects/MSoS.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1dq6O69TX7zBMp9KuYVYNoOhEEYkPbzkK&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DAB100</p>
+            <p class="p2subr">Year 2</p>
+
+          </div>
+          <p class="p2text"><b>Making Sense<br> of Sensors</b></p>
+        </div>
+      </div>
+      <div class="imgdivpush"></div>
+      <div class="imgdivitem">
+        <a href="Projects/Digital_Craft.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1hwMo510gzykHABRuv7Y_5NRWhgejlrOj&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DCB150</p>
+            <p class="p2subr">Year 2</p>
+
+          </div>
+          <p class="p2text"><b>Digital <br>Craftmanship</b></p>
+
+        </div>
+      </div>
+      <div class="imgdivpush"></div>
+      <div class="imgdivitem">
+        <a href="Projects/AoI.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1tnhkWHDYBv-nmX3481qiIPcZHCXtiAXo&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DCB200</p>
+            <p class="p2subr">Year 2</p>
+
+          </div>
+          <p class="p2text"><b>Aesthetics of Interaction</b></p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--
+    <h2 class="yearHead" id="USE">2023/2024 Sem. A</h2>
+    -->
+    <div class="imgdiv clearfix">
+
+        <h2 class="imgdivhead">Sem. A</h2>
+      <div class="imgdivitem">
+
+        <a href="/Projects/USE.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1U2FXwSx9tQ0m4cqqAdcDWZtHk-W9D34M&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">0SSUH0 - USE line</p>
+            <p class="p2subr">Year 2</p>
+
+          </div>
+          <p class="p2text"><b>Quality of Life <br>USE Learning line </b></p>
+        </div>
+      </div>
+      <div class="imgdivpush"></div>
+      <div class="imgdivitem">
+        <a href="Projects/Project2.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1YPLVRr6dUjW13bibg0qVQrehRVIhSOqI&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DPB210 - Project 2</p>
+            <p class="p2subr">Year 2</p>
+
+          </div>
+          <p class="p2text"><b>Project <br>Jungo </b></p>
+        </div>
+      </div>
+      <div class="imgdivpush"></div>
+      <div class="imgdivitem">
+        <a href="Projects/DesignResearch.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1ndAx867D_SFP12IY3Ja9XOBPRZeibyMy&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DDB100</p>
+            <p class="p2subr">Year 2</p>
+
+          </div>
+          <p class="p2text"><b>Design <> Research <br></b></p>
+
+        </div>
+      </div>
+      <div class="imgdivpush"></div>
+      <div class="imgdivitem">
+        <a href="Projects/EngineerDes.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=10jNtE8DAhNTB1-yeDgf2UsomUQhS1tde&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DRB170</p>
+            <p class="p2subr">Year 2</p>
+
+          </div>
+          <p class="p2text"><b>Engineering <br>Design</b></p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <h2 class="yearHead" id="2023">2022/2023</h2>
+    <div class="imgdiv clearfix">
+        <h2 class="imgdivhead">Sem. B</h2>
+
+      <div class="imgdivitem">
+        <a href="/Projects/Project1.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1zJe5uiFocoSFllUZgCv5An9LLLRW_pTo&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DPB100, Project 1</p>
+            <p class="p2subr">Year 1</p>
+
+          </div>
+          <p class="p2text"><b>Study Space</b></p>
+        </div>
+      </div>
+   <!--   <div class="imgdivpush"></div>
+      <div class="imgdivitem">
+        <a href="/Projects.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1ALtkb9XTMF5rZiDSlJbrs-daLNeX08El&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DZB120</p>
+            <p class="p2subr">Quartile 4</p>
+
+          </div>
+          <p class="p2text"><b>Exploratory <br>Sketching </b></p>
+        </div>
+      </div>-->
+    </div>
+
+
+
+
+    <div class="imgdiv clearfix">
+      <!--<div class="imgdivitem">
+        <a href="/Projects/UCD.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1Iq0iaeZNvapJJp7ZRRi7cskLX80tg7kH&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DDB200</p>
+            <p class="p2subr">Quartile 2</p>
+
+          </div>
+          <p class="p2text"><b>User-centered <br>Design</b></p>
+        </div>
+      </div>
+      <div class="imgdivpush"></div>-->
+        <h2 class="imgdivhead">Sem. A</h2>
+
+      <div class="imgdivitem">
+        <a href="/Projects/Light.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=1CPJCI8gL6QHoXMoo2-Dzo7QYO1AvfhGr&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">0HEUA0</p>
+            <p class="p2subr">Year 1</p>
+
+          </div>
+          <p class="p2text"><b>Light and <br>Experience</b></p>
+        </div>
+      </div>
+      <div class="imgdivpush"></div>
+      <div class="imgdivitem">
+        <a href="Projects/FITD.html">
+          <img class="imgdivimg" src="https://drive.google.com/thumbnail?id=13G-7td38S_qlwbRGL-WHGc4oWDHLoMW3&sz=w1000">
+        </a>
+        <div class="overlay">
+          <div class="overlay2">
+            <p class="p2sub">DCB100</p>
+            <p class="p2subr">Year 1</p>
+
+          </div>
+          <p class="p2text"><b>From Idea <br>to Design</b></p>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <hr>
+  <p class="psub2">Find some of my most influential projects</p>
+  <h1 class="h1proj"><a href="Projects.html">Here!</a></h1>
+
+  </div>
+
+  <div w3-include-html="SubBar.html"></div>
+  <script type="text/javascript" src="lightmode.js" defer></script>
+  <script src="Collapse.js"></script>
+
+</body>
+
+</html>
